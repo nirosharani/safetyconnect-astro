@@ -1,0 +1,424 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Driving Safety software — detect risk, coach drivers | SafetyConnect"
+  description="Detect distraction, fatigue, speeding, and harsh driving in real time, then coach safer habits — without invading employee privacy."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <span class="eyebrow">Driving Safety</span>
+        <h1 class="display-l" style="margin-bottom:24px;">Protect every employee who drives for work.</h1>
+        <p class="lead">AI-powered driving safety for field forces, without invading their privacy. SafetyConnect's Driving Safety detects distraction, fatigue, speeding, and harsh driving in real time, then helps your team build safer habits with the SafetyConnect Score.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:32px;align-items:center;justify-content:center;">
+        <!-- Phone mock -->
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="phone__statusbar"><span>9:41</span><span>BUSINESS · ON</span></div>
+            <div class="phone__appbar">
+              <div class="phone__title">Your week</div>
+              <span class="phone__mode">SAFE</span>
+            </div>
+            <div class="phone__score-ring">
+              <div class="phone__score-num">
+                <strong>82</strong>
+                <span>SAFETYCONNECT SCORE</span>
+              </div>
+            </div>
+            <div class="phone__metric-row"><span>Trips</span><span>14</span></div>
+            <div class="phone__metric-row"><span>ATBs</span><span>3</span></div>
+            <div class="phone__metric-row"><span>Distance</span><span>284 km</span></div>
+            <div class="phone__metric-row"><span>Rank in group</span><span>#7 of 87</span></div>
+            <div style="margin-top:16px;padding:10px;background:rgba(25,167,206,0.08);border-radius:6px;font-size:11px;color:#0E7B97;text-align:center;">↑ 4 points vs last week</div>
+          </div>
+        </div>
+        <!-- Manager UI strip -->
+        <div class="product-ui" style="width:340px;">
+          <div class="product-ui__chrome">
+            <span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span>
+            <span class="product-ui__url">app.safetyconnect.io / trip / 28947</span>
+          </div>
+          <div style="padding:20px;">
+            <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">TRIP DETAIL · TODAY</div>
+            <div style="font-size:18px;font-weight:600;color:var(--navy);margin-top:6px;margin-bottom:16px;">Mumbai → Pune · 2h 42m</div>
+            <div style="height:80px;background:linear-gradient(90deg,var(--steel-100) 0%,var(--steel-200) 50%,var(--steel-100) 100%);border-radius:6px;position:relative;margin-bottom:16px;">
+              <div style="position:absolute;top:20px;left:18%;width:6px;height:40px;background:var(--pink);border-radius:3px;"></div>
+              <div style="position:absolute;top:24px;left:42%;width:6px;height:32px;background:var(--steel-500);border-radius:3px;"></div>
+              <div style="position:absolute;top:28px;left:71%;width:6px;height:24px;background:var(--pink);border-radius:3px;"></div>
+              <div style="position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:9px;color:var(--steel-500);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;">ATB EVENTS · ROUTE</div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:12px;">
+              <div style="padding:8px;background:var(--steel-50);border-radius:4px;"><div style="font-size:10px;color:var(--steel-600);">DISTRACTION</div><div style="font-weight:600;color:var(--navy);margin-top:2px;">2 events</div></div>
+              <div style="padding:8px;background:var(--steel-50);border-radius:4px;"><div style="font-size:10px;color:var(--steel-600);">HARSH BRAKE</div><div style="font-weight:600;color:var(--navy);margin-top:2px;">1 event</div></div>
+              <div style="padding:8px;background:var(--steel-50);border-radius:4px;"><div style="font-size:10px;color:var(--steel-600);">SPEED</div><div style="font-weight:600;color:var(--navy);margin-top:2px;">0 events</div></div>
+              <div style="padding:8px;background:var(--steel-50);border-radius:4px;"><div style="font-size:10px;color:var(--steel-600);">FATIGUE</div><div style="font-weight:600;color:var(--navy);margin-top:2px;">0 events</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Field force problem -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">The field force problem</span>
+      <h2 class="display-m">Your most exposed employees are the ones you can see the least.</h2>
+      <p>Service engineers, sales teams, and technicians spend the working day on the road, alone, in the highest-risk activity most companies ask of their people. Until something goes wrong, you have no visibility into how they drive.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:34px;text-align:center;">
+        <div style="width:54px;height:54px;border-radius:13px;background:rgba(240,80,112,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:8px;">On the road, alone</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">Field teams drive more kilometres than anyone in the company, often in their own vehicles, with no one alongside them.</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:34px;text-align:center;">
+        <div style="width:54px;height:54px;border-radius:13px;background:rgba(25,167,206,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v16M15 6v16"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:8px;">Telematics shows dots, not behaviour</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">GPS tells you where a vehicle went. It does not tell you about the distraction, fatigue, or overspeeding that actually causes crashes.</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:34px;text-align:center;">
+        <div style="width:54px;height:54px;border-radius:13px;background:rgba(26,39,68,0.08);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v5M12 18v.01"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:8px;">You find out after the crash</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">With no behaviour data, the first real signal is the incident report. By then it is too late to coach the driver who needed it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How it works</span>
+      <h2 class="display-m">How SafetyConnect's driving safety software works.</h2>
+      <p>No hardware and no dashcams. Three steps, running on the phone your team already carries.</p>
+    </div>
+    <div class="grid-3">
+      <div>
+        <div style="height:150px;background:var(--steel-50);border:1px solid var(--steel-200);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;">
+          <div style="width:62px;height:118px;border:2px solid var(--steel-300);border-radius:13px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+            <div style="width:34px;height:34px;border-radius:50%;background:rgba(25,167,206,0.15);display:flex;align-items:center;justify-content:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg></div>
+            <div style="font-size:7.5px;color:var(--teal);font-weight:700;letter-spacing:0.06em;">BUSINESS · ON</div>
+          </div>
+        </div>
+        <div class="lead-num">01</div>
+        <h3 class="h3 mb-2 mt-3">The driver app runs in the background</h3>
+        <p class="text-secondary body">On the employee's own phone, business-hours-only by default. It reads GPS, accelerometer, and gyroscope. No camera, no in-vehicle hardware, no installation.</p>
+      </div>
+      <div>
+        <div style="height:150px;background:var(--steel-50);border:1px solid var(--steel-200);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:0 28px;margin-bottom:22px;">
+          <div style="width:100%;">
+            <div style="position:relative;height:3px;background:var(--steel-300);border-radius:2px;margin:36px 0 10px;">
+              <span style="position:absolute;left:18%;top:-3.5px;width:10px;height:10px;border-radius:50%;background:var(--pink);"></span>
+              <span style="position:absolute;left:52%;top:-3.5px;width:10px;height:10px;border-radius:50%;background:var(--navy);"></span>
+              <span style="position:absolute;left:82%;top:-3.5px;width:10px;height:10px;border-radius:50%;background:var(--teal);"></span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:8.5px;color:var(--steel-700);font-weight:600;"><span>Distraction</span><span>Harsh brake</span><span>Overspeed</span></div>
+          </div>
+        </div>
+        <div class="lead-num">02</div>
+        <h3 class="h3 mb-2 mt-3">AI detects risky driving in real time</h3>
+        <p class="text-secondary body">Distraction, fatigue, harsh braking, harsh acceleration, overspeeding, and sharp cornering, scored at trip level with the context behind each event.</p>
+      </div>
+      <div>
+        <div style="height:150px;background:var(--steel-50);border:1px solid var(--steel-200);border-radius:12px;display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:22px;">
+          <div style="width:80px;height:80px;border-radius:50%;border:5px solid var(--teal);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:var(--navy);background:#fff;">82</div>
+          <div style="display:flex;flex-direction:column;gap:6px;"><span class="band band--good">Good</span><div style="font-size:11px;color:var(--teal);font-weight:600;">&uarr; 4 this week</div></div>
+        </div>
+        <div class="lead-num">03</div>
+        <h3 class="h3 mb-2 mt-3">Coaching and recognition close the loop</h3>
+        <p class="text-secondary body">Drivers see their own SafetyConnect Score and trends. Managers see group risk patterns. Recognition rewards safe driving, not just penalties for unsafe driving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key capabilities -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Capabilities</span>
+      <h2 class="display-m">Everything your safety team needs in one app.</h2>
+      <p>A complete driving safety toolkit in one app, not separate tools your team has to stitch together.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Driving behaviour monitoring</div>
+        <div class="card__body">AI-powered analysis of distraction, fatigue, harsh acceleration, harsh braking, overspeeding, and phone use, captured by phone sensors as the trip happens. No hardware required.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">SafetyConnect Score</div>
+        <div class="card__body">A single, defensible safety metric per driver and per team. Gamified leaderboards drive recognition for safe driving, not just penalties for unsafe driving.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Condition detection</div>
+        <div class="card__body">Real-time detection of fatigue and drowsiness signals during a trip, so a tiring driver is alerted in the moment and the manager sees the risk building before it becomes an incident.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2zM12 9v6M12 18v.01"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">SOS</div>
+        <div class="card__body">One-tap emergency alert from the driver app. Emergency contacts and admins are notified instantly with the driver’s last known location and trip context.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Incident &amp; near-miss reporting</div>
+        <div class="card__body">One-tap reporting from the driver app. Photos, location, witness details, and trip context attached automatically. Closure tracked in CAPA Tracking.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Audits &amp; checklists</div>
+        <div class="card__body">Configurable safety checklists for drivers in the field. Vehicle pre-trip inspections, customer site inspections, and JSAs, captured on mobile and audit-ready by design.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Contextual learning (LMS)</div>
+        <div class="card__body">A learning management system that adapts to the driver, not a static video library. New joiners are onboarded with defensive-driving training, then receive learning matched to their own behaviour: a driver flagged for harsh braking gets the smooth-braking module. Short micro-learning videos are followed by quizzes, with every assignment tracked to closure.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 12v2m10-10h-2M4 12H2m15.07-7.07l-1.41 1.41M6.34 17.66l-1.41 1.41m12.14 0l-1.41-1.41M6.34 6.34L4.93 4.93"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Knowledge Centre</div>
+        <div class="card__body">Driving SOPs, emergency protocols, safety policies, and reference documents, accessible offline on every driver’s phone. Update once, push to the whole team.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Broadcast</div>
+        <div class="card__body">Real-time safety advisories to the driver app, weather alerts, route restrictions, policy changes, monsoon advisories, targeted by group, region, or shift.</div>
+      </div>
+
+      <div class="card" style="background:#fff;display:flex;flex-direction:column;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(143,175,194,0.20);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F7D92" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16l3-5 4 3 3-6"/></svg>
+        </div>
+        <div class="card__title" style="min-height:2.6em;">Operations insights</div>
+        <div class="card__body">Productivity reporting beyond safety: average time at customer locations, route efficiency, and idle time. The data your operations team has been asking for, in the platform your safety team owns.</div>
+      </div>
+
+    </div>
+
+    <!-- Managed Safety services bar -->
+    <div style="margin-top:32px;padding:28px 32px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;text-transform:uppercase;margin-bottom:6px;">MANAGED SAFETY SERVICES</div>
+        <div style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:4px;">Don't want to run this in-house? We'll run it with you.</div>
+        <div style="font-size:14px;color:var(--steel-700);max-width:60ch;">Driver counselling, new-process adoption, management reporting, and program reviews, optional services for customers without a dedicated safety analytics team.</div>
+      </div>
+      <a href="#" class="btn btn-secondary">Talk about Managed Safety</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Privacy and recognition -->
+<section class="section surface-navy">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <div>
+        <span class="eyebrow">Privacy &amp; recognition</span>
+        <h2 class="display-m" style="color:#fff;">Built to protect your people, not to watch them.</h2>
+        <p style="color:rgba(255,255,255,0.78);font-size:18px;line-height:1.55;margin-top:24px;margin-bottom:32px;">Every conversation about driving safety eventually comes to the same question: <em>Are we surveilling our employees?</em> SafetyConnect is built so the answer is always no.</p>
+        <a href="#" class="btn btn-primary">Read our Trust &amp; Security commitments</a>
+      </div>
+      <div>
+        <div style="border-left:1px solid rgba(255,255,255,0.15);padding-left:24px;">
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Business-hours-only mode</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Default-on. Trips outside working hours are not captured unless the employee chooses to record them.</div>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">No camera, no audio</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Phone sensors only, GPS, accelerometer, gyroscope. No video, no photos, no audio.</div>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Role-based access</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Managers see their team. HR sees compliance. Employees see their own scores. Nobody sees more than they need.</div>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Recognition first</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">The SafetyConnect Score rewards safe driving and surfaces top performers. Coaching is the loop, not punishment.</div>
+          </div>
+          <div style="padding:20px 0;">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">ISO 27001 certified</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Encryption, audit logs, and enterprise-grade access controls are standard.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Outcomes & proof -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Outcomes</span>
+      <h2 class="display-m">What customers achieve.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;">
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--pink);line-height:1;">80%</div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Reduction in road accidents</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Across SafetyConnect customers</div>
+      </div>
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">30%</div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Increase in productivity</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Fewer accidents, less downtime</div>
+      </div>
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">&lt;3<span style="font-size:24px;font-weight:500;color:var(--steel-600);"> months</span></div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">ROI</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Typical payback period</div>
+      </div>
+    </div>
+    <div class="testimonial" style="max-width:800px;">
+      <div class="testimonial__quote">"Safety is a top priority, but road safety was where we were lagging behind."</div>
+      <p class="testimonial__body">We had the misfortune of losing employees to road incidents in the past. SafetyConnect was the perfect tool we were looking for. The app provided great insights into driving behaviour, which helped our employees develop corrective behaviour leading to a lower number of road incidents.</p>
+      <div class="testimonial__author"><strong>HSE Manager</strong><span>Leading Pharma Company · Named reference available on request</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Integrations -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Deployment</span>
+        <h2 class="display-m">Live in days. Integrated with your existing stack.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div style="padding:20px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">APIs</div>
+          <div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:4px;">REST for HRIS, ERP, and identity providers</div>
+        </div>
+        <div style="padding:20px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">AUTH</div>
+          <div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:4px;">SSO via SAML / OAuth</div>
+        </div>
+        <div style="padding:20px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">HOSTING</div>
+          <div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:4px;">AWS (ISO 27001), with flexible data residency options</div>
+        </div>
+        <div style="padding:20px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">LANGUAGES</div>
+          <div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:4px;">Multilingual driver app</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Driving Safety.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Do you require hardware in vehicles?</summary><div class="faq-a">No. The driver app runs on the employee's existing smartphone and uses standard phone sensors. No dashcam, no in-vehicle hardware, no installation.</div></details>
+      <details class="faq-item"><summary class="faq-q">What's captured outside work hours?</summary><div class="faq-a">Nothing, by default. Business-hours-only mode is on by default. The employee can opt in to record personal trips, but the organisation can disable personal-time capture entirely.</div></details>
+      <details class="faq-item"><summary class="faq-q">Will it work in low-connectivity areas?</summary><div class="faq-a">Yes. Trips are captured offline and synced when the device is back online.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can we adjust how sensitive the detection is?</summary><div class="faq-a">The definition of an at-risk behaviour (ATB) event follows established safety norms, so your score stays consistent and defensible across teams. Within those norms we can tune the sensitivities to your organisation’s preferences, speed thresholds, harsh-braking g-force, and allowed phone use, by industry, geography, and shift.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does coaching work?</summary><div class="faq-a">Drivers see their own SafetyConnect Score and trip-level events in the app. Managers see group-level patterns and can route targeted coaching to specific drivers. Most customers run a weekly review cadence with their safety committee.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- Related reading -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Related reading</span>
+        <h2 class="h1" style="margin-top:4px;">More on driving safety.</h2>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All driving safety articles</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--steel-200),var(--steel-400));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">METHODOLOGY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">The SafetyConnect Score, explained.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A defensible safety metric that drivers, managers, and safety leaders can all agree on. Here's how we built it.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">PRIVACY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Why business-hours-only is the question every EHS Head should ask vendors.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">If the answer is hand-wavy, you're looking at a surveillance product wearing a safety badge.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--navy));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">CASE STUDY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">How a leading FMCG cut major accidents by 73% in 18 months.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">The deployment, the coaching cadence, and the data that turned a top-five road risk into a top-quartile safety program.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-steel"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See Driving Safety on your team in 30 minutes.</h2>
+  <p>Bring your driver count, your industry, and your top safety questions. We'll walk through the driver app, the manager dashboard, and the SafetyConnect Score on a live scenario.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+    <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+  </div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

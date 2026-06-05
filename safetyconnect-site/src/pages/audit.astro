@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Audit Management — schedule, conduct, close findings | SafetyConnect"
+  description="Run inspections and audits on mobile, track findings to closure, and stay inspection-ready."
+>
+  <SiteNav />
+
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.06em;margin-bottom:12px;">PROCESS SAFETY SUITE  ·  MODULE 04</div>
+        <span class="eyebrow">Audit Management</span>
+        <h1 class="display-l" style="margin-bottom:24px;">Audit-ready, always.</h1>
+        <p class="lead">Audit Management isn't about audits, it's about being ready when one shows up. SafetyConnect centralizes every audit, every checklist, every finding, every action, across every site, so your team isn't reconstructing twelve months of data the week before the inspector arrives.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <!-- Audit dashboard UI -->
+      <div class="product-ui">
+        <div class="product-ui__chrome"><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__url">app.safetyconnect.io / audits</span></div>
+        <div style="padding:0;">
+          <div style="background:var(--navy);color:#fff;padding:16px 20px;"><div style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.06em;">AUDIT DASHBOARD · Q2 2026</div><div style="font-size:15px;font-weight:600;margin-top:2px;">All sites · Compliance overview</div></div>
+          <div style="padding:20px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;">
+              <div style="padding:12px;background:rgba(25,167,206,0.08);border-radius:5px;text-align:center;"><div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">AVG. SCORE</div><div style="font-size:22px;font-weight:700;color:var(--teal);margin-top:2px;">87%</div></div>
+              <div style="padding:12px;background:rgba(143,175,194,0.15);border-radius:5px;text-align:center;"><div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">OPEN FINDINGS</div><div style="font-size:22px;font-weight:700;color:var(--navy);margin-top:2px;">42</div></div>
+              <div style="padding:12px;background:rgba(240,80,112,0.08);border-radius:5px;text-align:center;"><div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">OVERDUE</div><div style="font-size:22px;font-weight:700;color:var(--pink);margin-top:2px;">7</div></div>
+            </div>
+            <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:8px;">RECENT AUDITS</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#fff;border:1px solid var(--steel-200);border-radius:5px;"><div><div style="font-size:12px;font-weight:600;color:var(--navy);">Plant 3 · ISO 45001 internal</div><div style="font-size:10px;color:var(--steel-600);">12 May 2026 · Anjali R.</div></div><span class="band band--good">92%</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#fff;border:1px solid var(--steel-200);border-radius:5px;"><div><div style="font-size:12px;font-weight:600;color:var(--navy);">Plant 1 · OSH Code statutory</div><div style="font-size:10px;color:var(--steel-600);">08 May 2026 · External</div></div><span class="band band--medium">68%</span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#fff;border:1px solid var(--steel-200);border-radius:5px;"><div><div style="font-size:12px;font-weight:600;color:var(--navy);">Plant 2 · PSCI customer audit</div><div style="font-size:10px;color:var(--steel-600);">02 May 2026 · Customer</div></div><span class="band band--good">88%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div><span class="eyebrow">Why centralise audits</span><h2 class="display-m">Every audit you've ever done, searchable, in one place.</h2></div>
+      <div><p class="body-l text-secondary mb-3">Internal audits, regulatory audits, customer audits, ISO surveillance audits, statutory inspections, each on its own template, in its own folder, with its own findings, on its own timeline. The result: when a new audit lands, your team spends half the time reconstructing context that already exists somewhere.</p><p class="body-l text-secondary">Audit Management centralizes all of it. One library of templates. One findings register. One action tracker. Multi-site rollups for organisations operating across plants and geographies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Capabilities</span><h2 class="display-m">Six capabilities. One audit operating system.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card"><div class="card__title">Template library</div><div class="card__body">Pre-built templates for ISO 45001, ISO 14001, OSHA inspection, OSH Code, PSCI, EcoVadis, customer-specific audits, plus a public checklist library you can adapt. Build your own templates from scratch where you need to.</div></div>
+      <div class="card"><div class="card__title">Audit scheduling</div><div class="card__body">Plan internal audits across the year, assign auditors, set reminders, and avoid the calendar chaos of audit season. Automatic notifications for upcoming and overdue audits.</div></div>
+      <div class="card"><div class="card__title">Mobile-first execution</div><div class="card__body">Auditors walk the plant with their phone. Tick off checklist items, capture photos, mark findings, score sections, everything synced to the audit record in real time.</div></div>
+      <div class="card"><div class="card__title">Findings management</div><div class="card__body">Each finding linked to the relevant checklist item, classified by severity, assigned to an owner, with a deadline and verification step. Findings flow into CAPA Tracking automatically.</div></div>
+      <div class="card"><div class="card__title">Scoring and benchmarking</div><div class="card__body">Configurable scoring frameworks (compliance %, weighted scoring, pass/fail). Multi-site benchmarking, trend analysis, audit-to-audit progression tracking.</div></div>
+      <div class="card"><div class="card__title">Audit-ready reporting</div><div class="card__body">Export audit reports in the formats inspectors expect, PDF, structured data, regulatory templates. Compile multi-audit reports for ISO surveillance and customer reviews.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Audit Management.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Can we use our existing audit templates?</summary><div class="faq-a">Yes. Bring your existing templates, Word, Excel, PDF, and we'll digitise them. Most customers come to us with 5–10 existing audit templates that need to live in one system.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does this handle customer audits?</summary><div class="faq-a">Customer audits (PSCI, EcoVadis, pharma customer audits, FMCG procurement audits) are first-class citizens. Pre-built templates, evidence libraries, and response history are available across your team.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it work for statutory audits in India?</summary><div class="faq-a">Yes. OSH Code, Factories Act, Boilers Act, Environment (Protection) Act, pre-built templates available with checklists aligned to current statutory requirements.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;"><div><span class="eyebrow">Related reading</span><h2 class="h1" style="margin-top:4px;">More on audits.</h2></div><a href="#" class="btn-tertiary arrow-right">All audit articles</a></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--steel-600));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">ISO 45001</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">ISO 45001 audit prep, what your software needs to do.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A practical guide for safety leaders preparing for surveillance audits.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">CUSTOMER AUDITS</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Surviving a PSCI audit, with your team intact.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A field guide from three pharma plants that have been through it more than once.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">PRACTICE</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Safety audit vs safety inspection: what's the difference?</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A short clarifier for safety leaders building their annual audit and inspection calendars.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See Audit Management on your audit calendar.</h2>
+  <p>Bring your audit templates. We'll show you the workflow in 30 minutes.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a></div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

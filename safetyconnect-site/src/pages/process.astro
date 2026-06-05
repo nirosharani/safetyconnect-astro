@@ -1,0 +1,306 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Process Safety suite — PTW, incidents, audits, CAPA | SafetyConnect"
+  description="Digitise permit-to-work, incident investigation, audits, and CAPA tracking in one connected process safety platform."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <span class="eyebrow">Process Safety</span>
+        <h1 class="display-l" style="margin-bottom:24px;">Process safety for industrial operations, without the paperwork.</h1>
+        <p class="lead">Digital permits, observations, incidents, audits, and action tracking on a single platform. HAZOP, OPA, JSA, MOC and the rest of the practices your process safety team already runs, on one digital workflow that’s tracked to closure. Built for pharma, chemicals, manufacturing, oil and gas, and any operation that cannot afford to get this wrong.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:24px;align-items:center;justify-content:center;">
+        <!-- Mobile permit -->
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="phone__statusbar"><span>9:41</span><span>PLANT 02 · SHIFT B</span></div>
+            <div class="phone__appbar">
+              <div class="phone__title">Hot Work Permit</div>
+              <span class="phone__mode" style="background:rgba(240,80,112,0.12);color:#B53B53;">PENDING</span>
+            </div>
+            <div style="padding:12px;background:var(--steel-50);border-radius:6px;margin-bottom:12px;">
+              <div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">PERMIT NO.</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--navy);font-weight:600;margin-top:2px;">PTW-HW-28471</div>
+            </div>
+            <div style="font-size:11px;color:var(--steel-600);margin-bottom:6px;">REQUESTOR</div>
+            <div style="font-size:13px;font-weight:600;color:var(--navy);margin-bottom:12px;">R. Krishnan · Maintenance</div>
+            <div style="font-size:11px;color:var(--steel-600);margin-bottom:6px;">LOCATION</div>
+            <div style="font-size:13px;color:var(--navy);margin-bottom:12px;">Unit 4 · Reactor R-201</div>
+            <div style="font-size:11px;color:var(--steel-600);margin-bottom:6px;">VALID</div>
+            <div style="font-size:13px;color:var(--navy);margin-bottom:16px;">14:00, 18:00 · Today</div>
+            <div style="display:flex;gap:6px;margin-bottom:8px;">
+              <div style="flex:1;padding:8px;background:rgba(25,167,206,0.10);border:1px solid var(--teal);border-radius:4px;text-align:center;font-size:11px;color:#0E7B97;font-weight:600;">✓ Gas test</div>
+              <div style="flex:1;padding:8px;background:rgba(25,167,206,0.10);border:1px solid var(--teal);border-radius:4px;text-align:center;font-size:11px;color:#0E7B97;font-weight:600;">✓ Isolation</div>
+            </div>
+            <div style="display:flex;gap:6px;margin-bottom:14px;">
+              <div style="flex:1;padding:8px;background:var(--steel-50);border:1px solid var(--steel-300);border-radius:4px;text-align:center;font-size:11px;color:var(--steel-600);">Approve</div>
+              <div style="flex:1;padding:8px;background:var(--steel-50);border:1px solid var(--steel-300);border-radius:4px;text-align:center;font-size:11px;color:var(--steel-600);">Sign-off</div>
+            </div>
+            <div style="padding:10px;background:var(--pink);border-radius:6px;text-align:center;font-size:12px;color:#fff;font-weight:600;">Approve permit</div>
+          </div>
+        </div>
+        <!-- Action tracker -->
+        <div class="product-ui" style="width:320px;">
+          <div class="product-ui__chrome">
+            <span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span>
+            <span class="product-ui__url">ps.safetyconnect.io / actions</span>
+          </div>
+          <div style="padding:18px;">
+            <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">ACTION TRACKING · OPEN</div>
+            <div style="font-size:18px;font-weight:600;color:var(--navy);margin-top:6px;margin-bottom:16px;">24 actions · 6 overdue</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="padding:10px;border:1px solid var(--steel-200);border-radius:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;"><span style="font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--steel-500);">ACT-1847</span><span class="band band--needs" style="font-size:9px;">OVERDUE</span></div>
+                <div style="font-size:12px;font-weight:500;color:var(--navy);line-height:1.3;">Replace LOTO devices on Reactor 201</div>
+                <div style="font-size:10px;color:var(--steel-500);margin-top:4px;">Due 12 May · Owner: R. Kumar</div>
+              </div>
+              <div style="padding:10px;border:1px solid var(--steel-200);border-radius:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;"><span style="font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--steel-500);">ACT-1849</span><span class="band band--medium" style="font-size:9px;">DUE TUE</span></div>
+                <div style="font-size:12px;font-weight:500;color:var(--navy);line-height:1.3;">HIRA review for confined-space SOP</div>
+                <div style="font-size:10px;color:var(--steel-500);margin-top:4px;">Due 20 May · Owner: P. Mehta</div>
+              </div>
+              <div style="padding:10px;border:1px solid var(--steel-200);border-radius:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;"><span style="font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--steel-500);">ACT-1852</span><span class="band band--good" style="font-size:9px;">ON TRACK</span></div>
+                <div style="font-size:12px;font-weight:500;color:var(--navy);line-height:1.3;">Refresher: emergency response drill</div>
+                <div style="font-size:10px;color:var(--steel-500);margin-top:4px;">Due 28 May · Owner: S. Iyer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Plant safety problem -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Plant safety challenges</span>
+      <h2 class="display-m">Six things that make plant safety harder than it should be.</h2>
+      <p>Your process safety team already knows the methodologies. What slows them down is how the work moves, across binders, inboxes, and spreadsheets that never quite line up.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4a7 7 0 1 0 7 7"/><path d="M11 8v3l2 2"/><path d="M16 4l3 3M19 4l-3 3"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Improper risk assessment</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Risks get assessed in spreadsheets that nobody updates, with controls that nobody verifies. The HIRA, JSA, or HAZOP that sits in a folder is not the one the floor is following.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/><circle cx="17" cy="17" r="3" fill="none"/><path d="M17 15v3"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Inadequate incident reporting</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Near-misses go unrecorded because reporting is a paper form on a desk somewhere. The serious incident you investigate next quarter started as a near-miss you never saw.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><path d="M5 22v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M18 6v2M18 11v.01"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Human error</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">People skip a step under pressure, miss a checklist item on a long shift, or are not trained on the SOP that landed yesterday. Without a visible workflow, errors compound.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9a7 7 0 0 1 14 0"/><circle cx="12" cy="13" r="2"/><path d="M9 21h6"/><path d="M12 17v4"/><path d="M3 9h2M19 9h2"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Emergency preparedness</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Drills happen once a year and are not tied to the live risks on the floor. Roles, response times, and contacts live in binders that get out of date.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7"/><path d="M9 7h6M9 11h4"/><path d="M16 17l2 2 4-4"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Compliance</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Auditors arrive and your team spends a week reconstructing trails from email, signatures, and shift notes. Compliance becomes a manual exercise, not an outcome.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;">Poor communication</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Permit issuers, area owners, contractors, and managers each have a different view of what was approved, who is doing what, and where the risk sits right now.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- The Process Safety modules (5) -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">The modules</span>
+      <h2 class="display-m">Five modules. One platform. Audit-ready by design.</h2>
+      <p>One unified dashboard for the safety management workflows that run your plant. HAZOP, OPA, JSA, MOC and the rest of the practices sit on top of these five.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div class="card card--lg"><div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9 2v2h6V2M9 10h6M9 14h4"/></svg></div><div class="lead-num" style="margin:0;">01</div></div><h3 class="h2 mb-2">E-Permit to Work</h3><p class="text-secondary body mb-3">Hot work, cold work, confined space, working at height, electrical isolation, chemical work, and any custom permit type. Location-based approvals with automated escalations. Multi-level signatures on mobile. Full audit trail.</p><a href="#" class="btn-tertiary arrow-right">Explore Permit to Work</a></div>
+      <div class="card card--lg"><div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/></svg></div><div class="lead-num" style="margin:0;">02</div></div><h3 class="h2 mb-2">Observation Reporting</h3><p class="text-secondary body mb-3">A mobile channel for anyone on site to report unsafe conditions and unsafe acts. Every observation is logged, categorised, and routed to an owner, so what your team notices on the floor actually gets acted on.</p><a href="#" class="btn-tertiary arrow-right">Explore Observation Reporting</a></div>
+      <div class="card card--lg"><div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v6M12 18v.01"/></svg></div><div class="lead-num" style="margin:0;">03</div></div><h3 class="h2 mb-2">Incident Reporting</h3><p class="text-secondary body mb-3">Capture incidents and near-misses from the floor in seconds, with photos, location, and witnesses attached automatically. Multi-level investigation workflow with root-cause analysis. From incident to closure on one digital trail.</p><a href="#" class="btn-tertiary arrow-right">Explore Incident Reporting</a></div>
+      <div class="card card--lg"><div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div class="lead-num" style="margin:0;">04</div></div><h3 class="h2 mb-2">Audit Management</h3><p class="text-secondary body mb-3">Centralise all your audit data on one platform. Standardise audit processes across sites. Build your own checklists or use the public library. Internal, external, and regulatory audits, all in one place.</p><a href="#" class="btn-tertiary arrow-right">Explore Audit Management</a></div>
+      <div class="card card--lg" style="grid-column:span 2;"><div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/><path d="M9 12l2 2 4-4"/></svg></div><div class="lead-num" style="margin:0;">05</div></div><h3 class="h2 mb-2">Action Tracking (CAPA)</h3><p class="text-secondary body mb-3">Every action from every audit, observation, and incident, in one tracker. Assign owners, set deadlines, escalate delays, automate alerts, and report on closure rates. The single source of truth your safety committee actually trusts.</p><a href="#" class="btn-tertiary arrow-right">Explore CAPA Tracking</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Training, managed services, counselling -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">More than the platform</span>
+      <h2 class="display-m">Training, managed services, and counselling, run by us.</h2>
+      <p>The platform is the tool. We bring the surrounding services your safety programme needs to actually move, all delivered by our own team, not handed off to a partner network.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Training</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;margin-bottom:14px;">PSM fundamentals, HIRA and JSA, incident investigation, audit readiness for ISO 45001 and OSH Code, run for your team by ours.</p>
+        <a href="#" class="btn-tertiary arrow-right" style="font-size:13px;">Talk about training</a>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Managed services</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;margin-bottom:14px;">For teams without dedicated analytics or admin bandwidth, we run the platform alongside you, with reporting, programme reviews, and adoption support.</p>
+        <a href="#" class="btn-tertiary arrow-right" style="font-size:13px;">Talk about managed services</a>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Counselling</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;margin-bottom:14px;">Behaviour change is what closes the last mile on safety. We counsel individuals and teams when the data shows someone needs more than a workflow.</p>
+        <a href="#" class="btn-tertiary arrow-right" style="font-size:13px;">Talk about counselling</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Industries</span>
+      <h2 class="display-m">Built for industries that cannot afford to get this wrong.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10M9 22h6M9 22V8m6 14V8M9 8a3 3 0 0 1 6 0M9 8H7l2 3M15 8h2l-2 3M11 12h2"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Pharmaceuticals</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">GMP-aligned permits, contractor oversight, incident traceability for cGMP plants.</div></div>
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l-4 8a4 4 0 0 0 4 6h6a4 4 0 0 0 4-6l-4-8V2"/><path d="M7 2h10M7 16h10"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Chemicals</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">Hot work, confined space, MOC workflows, plus observation reporting from the floor.</div></div>
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M3 8l3-5h12l3 5M9 13h6M9 17h6"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Manufacturing</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">Contractor permits, near-miss capture, audit-ready records across multiple lines.</div></div>
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M8 6l4-4 4 4M5 22V12h14v10"/><circle cx="9" cy="16" r="1"/><circle cx="15" cy="16" r="1"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Oil and gas</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">Multi-site PTW, high-hazard permits, contractor onboarding for upstream and downstream.</div></div>
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Power and energy</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">LOTO, switching permits, and emergency response on plants, substations, and renewables.</div></div>
+      <div style="padding:28px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;text-align:center;transition:transform 200ms ease,box-shadow 200ms ease;"><div style="width:52px;height:52px;border-radius:12px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l10-10 4 4 6-6"/><rect x="2" y="14" width="6" height="8"/><rect x="14" y="10" width="4" height="12"/><rect x="18" y="6" width="4" height="16"/></svg></div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Construction</div><div style="font-size:13px;color:var(--steel-700);line-height:1.5;">Site permits, sub-contractor compliance, and daily briefings on mobile, audit-ready by design.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Outcomes -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Outcomes</span><h2 class="display-m">What customers achieve.</h2><p>Process safety outcomes reported by customers running SafetyConnect across their plants.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;"><div style="font-size:48px;font-weight:600;color:var(--pink);line-height:1;">55%</div><div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Reduction in accidents</div><div style="font-size:13px;color:var(--steel-600);margin-top:4px;line-height:1.5;">Risks identified, controls verified, and the workflow followed, every shift.</div></div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;"><div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">25%</div><div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Improvement in efficiency</div><div style="font-size:13px;color:var(--steel-600);margin-top:4px;line-height:1.5;">Less time pulling reports together, more time on the floor.</div></div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;"><div style="font-size:48px;font-weight:600;color:var(--teal);line-height:1;">45%</div><div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Reduction in incident resolution time</div><div style="font-size:13px;color:var(--steel-600);margin-top:4px;line-height:1.5;">Investigation and CAPA closure that doesn’t stall in inboxes.</div></div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;"><div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">70%</div><div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Reduction in penalties</div><div style="font-size:13px;color:var(--steel-600);margin-top:4px;line-height:1.5;">Audit-ready records and a workflow that meets regulators on their terms.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Deployment -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Deployment</span>
+        <h2 class="display-m">Cloud, on-premise, or managed. Live in days.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">HOSTING</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">SaaS (default), on-premise, or managed cloud</div></div>
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">TIMELINE</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">Most customers go live in days</div></div>
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">INTEGRATIONS</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">SAP, Oracle, MS AD, common HRIS</div></div>
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">AUTH</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">SSO via SAML / OAuth</div></div>
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">SUPPORT</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">Dedicated implementation specialist</div></div>
+        <div style="padding:16px;border:1px solid var(--steel-200);border-radius:6px;"><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">LANGUAGES</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;">Available in your team’s language</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Process Safety.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Does SafetyConnect support our existing PTW types?</summary><div class="faq-a">Yes. We support all standard permit types, hot work, cold work, confined space entry, working at height, excavation, electrical isolation, LOTO, hazardous chemical work, and any custom permit type your operations require.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does SafetyConnect handle contractor management?</summary><div class="faq-a">Contractor profiles, qualifications, training records, and permit eligibility are managed in the platform. Permits cannot be approved for contractors with expired qualifications.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can we run SafetyConnect on-premise?</summary><div class="faq-a">Yes. Cloud is the default, but on-premise and managed cloud are available for pharma, defence, and other regulated industries.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does the incident workflow handle near-misses?</summary><div class="faq-a">Near-misses, first-aid cases, lost-time injuries, fire hazards, and any custom incident type are supported. The investigation workflow scales from quick close-outs for minor incidents to multi-level RCA for serious incidents.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it work offline on the plant floor?</summary><div class="faq-a">Yes. Mobile data capture works offline and syncs when connectivity is restored.</div></details>
+      <details class="faq-item"><summary class="faq-q">What about audit readiness?</summary><div class="faq-a">Every transaction in the platform has a full audit trail with timestamps, user IDs, and digital signatures. Audit reports are exportable in PDF for ISO, OSHA, OSH Code, and customer-specific audit requirements.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- Related reading -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Related reading</span>
+        <h2 class="h1" style="margin-top:4px;">More on process safety.</h2>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All process safety articles</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--teal));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">FRAMEWORK</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">A 6-step framework for digitising your permit-to-work process.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">From audit-trail gaps to a fully mobile PTW workflow, without losing the rigour your safety committee depends on.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--steel-500),var(--navy));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">METHODOLOGY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Incident reporting: the what, why, and how.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A pragmatic guide for safety teams designing their incident reporting workflow, and the metrics that actually move closure rates.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--steel-600));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">REGULATORY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Mapping OSHA 1910.119 to India's OSH Code.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A side-by-side reading for plants operating across geographies, what's the same, what's different, and what to digitise first.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy & security strip (added QC v11 — audit: privacy reassurance on every product page) -->
+<section class="section surface-navy">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <div>
+        <span class="eyebrow">Privacy &amp; security</span>
+        <h2 class="display-m" style="color:#fff;">Enterprise-grade security, role-scoped access.</h2>
+        <p style="color:rgba(255,255,255,0.78);font-size:18px;line-height:1.55;margin-top:24px;margin-bottom:32px;">Permits, incidents, audits, and CAPAs hold sensitive operational and contractor data. Access is scoped by role and segregated by organisation, so the right people see the right records and no one else.</p>
+        <a href="#" class="btn btn-primary">Read our Trust &amp; Security commitments</a>
+      </div>
+      <div>
+        <div style="border-left:1px solid rgba(255,255,255,0.15);padding-left:24px;">
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Role-based &amp; contractor-segregated access</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Your teams see your data; contractors see only their permits and tasks. Access expires when a contract ends.</div>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Audit-ready data trail</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Every permit, signature, and investigation step is captured in sequence and retained as an immutable, audit-ready trail.</div>
+          </div>
+          <div style="padding:20px 0;">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">ISO 27001 certified &middot; DPDP &amp; GDPR aligned</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Data residency options, documented sub-processors, and a clear deletion path. Full detail on the Trust &amp; Security page.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See SafetyConnect on your plant scenarios.</h2>
+  <p>30-minute walkthrough with a senior process safety specialist. Bring your permit types, your incident workflows, and your audit requirements, we'll show you exactly how SafetyConnect would handle them.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+    <a href="/demo" class="btn btn-secondary btn-lg">Talk to our team</a>
+  </div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

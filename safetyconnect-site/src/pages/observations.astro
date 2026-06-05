@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Observation Reporting — surface hazards early | SafetyConnect"
+  description="Capture hazards and near-misses in seconds and turn frontline observations into action."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.06em;margin-bottom:12px;">PROCESS SAFETY  ·  MODULE 02</div>
+        <span class="eyebrow">Observation Reporting</span>
+        <h1 class="display-l" style="margin-bottom:24px;">What your team sees on the floor, in the system.</h1>
+        <p class="lead">Unsafe conditions and unsafe acts get noticed every shift. Most never reach the people who can fix them. SafetyConnect’s Observation Reporting gives anyone on site a mobile channel to capture what they see, with the workflow behind it to route, categorise, and close every observation.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a walkthrough</a>
+          <a href="#process" class="btn btn-secondary btn-lg">Back to Process Safety</a>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="phone__screen">
+          <div class="phone__statusbar"><span>9:41</span><span>PLANT 02 · SHIFT B</span></div>
+          <div class="phone__appbar">
+            <div class="phone__title">New observation</div>
+            <span class="phone__mode" style="background:rgba(25,167,206,0.12);color:#0E7B97;">DRAFT</span>
+          </div>
+          <div style="padding:12px;background:var(--steel-50);border-radius:6px;margin-bottom:12px;">
+            <div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">TYPE</div>
+            <div style="font-size:13px;color:var(--navy);font-weight:600;margin-top:2px;">Unsafe condition</div>
+          </div>
+          <div style="font-size:11px;color:var(--steel-600);margin-bottom:6px;">AREA</div>
+          <div style="font-size:13px;color:var(--navy);margin-bottom:12px;">Unit 4 · Cooling tower walkway</div>
+          <div style="font-size:11px;color:var(--steel-600);margin-bottom:6px;">DETAILS</div>
+          <div style="font-size:12.5px;color:var(--steel-700);margin-bottom:14px;line-height:1.4;">Handrail missing on north walkway, contractor access point.</div>
+          <div style="height:90px;background:linear-gradient(135deg,var(--steel-100),var(--steel-200));border-radius:6px;margin-bottom:14px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--steel-600);">Photo attached</div>
+          <div style="padding:10px;background:var(--teal);border-radius:6px;text-align:center;font-size:12px;color:#fff;font-weight:600;">Submit observation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why observations matter -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div><span class="eyebrow">Why it matters</span><h2 class="display-m">The observation no one logged is next month’s incident.</h2></div>
+      <div>
+        <p class="body-l text-secondary mb-3">Most plants have observation boxes that gather dust and observation forms that never make it past a supervisor’s desk. The result: the patterns your team is already noticing on the floor never reach the safety committee.</p>
+        <p class="body-l text-secondary">Observation Reporting makes that loop trivial. Anyone can log what they see in under a minute, with a photo and a location. The system routes it to an owner, classifies it, and tracks it through to closure on the same trail as your incidents and audits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Capabilities -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Capabilities</span><h2 class="display-m">A complete observation workflow, on mobile.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card"><div class="card__title">Anyone can report</div><div class="card__body">Workers, supervisors, and contractors all submit observations from the same mobile app, no admin login needed. Photo, location, and category capture in under a minute.</div></div>
+      <div class="card"><div class="card__title">Auto-routed to an owner</div><div class="card__body">Each observation is categorised and routed to the right area owner based on type and location. Nothing sits in an inbox without an assignee.</div></div>
+      <div class="card"><div class="card__title">Linked to actions</div><div class="card__body">Every observation that needs follow-up generates a CAPA entry tied to it, tracked through to closure with the rest of your action register.</div></div>
+      <div class="card"><div class="card__title">Trends and patterns</div><div class="card__body">Heatmaps by area, category, and shift show where observations cluster, the leading indicator of where your next incident will come from.</div></div>
+      <div class="card"><div class="card__title">Recognition for reporters</div><div class="card__body">Recognise the team members who report consistently. A reported observation is a near-incident avoided, and the system makes that visible.</div></div>
+      <div class="card"><div class="card__title">Audit-ready by design</div><div class="card__body">Full audit trail on every observation, with timestamps, owners, and closure evidence. Exportable in PDF for ISO 45001, OSH Code, and customer audit requirements.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Observation Reporting.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Can anyone on site report observations, including contractors?</summary><div class="faq-a">Yes. The mobile app supports observation submission without an admin login, so workers, supervisors, and contractors can all log what they see. Submissions are tied to the area, not the user, so reporting stays low-friction.</div></details>
+      <details class="faq-item"><summary class="faq-q">How are observations different from incidents?</summary><div class="faq-a">Observations capture unsafe conditions and unsafe acts before anything goes wrong. Incidents capture what actually happened, including near-misses. Both flow into the same action register, so follow-up looks the same regardless of source.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it work offline?</summary><div class="faq-a">Yes. Observations can be drafted offline and sync the moment the device is back online.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can we customise categories?</summary><div class="faq-a">Yes. Observation categories, area definitions, and routing rules are configurable per plant and per shift.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See Observation Reporting on your plant.</h2>
+  <p style="font-size:18px;color:var(--steel-700);margin-bottom:32px;">30 minutes. Live walkthrough on a plant like yours.</p>
+  <a href="/demo" class="btn btn-primary btn-lg">Book a walkthrough</a>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

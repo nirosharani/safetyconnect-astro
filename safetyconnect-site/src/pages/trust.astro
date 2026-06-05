@@ -1,0 +1,257 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Trust & Security — privacy, ISO 27001, data residency | SafetyConnect"
+  description="How SafetyConnect protects employee privacy and enterprise data: ISO 27001, DPDP & GDPR alignment, residency options, and access controls."
+>
+  <SiteNav />
+
+<!-- Navy hero -->
+<section class="hero surface-navy" style="padding:96px 0 80px;">
+  <div class="container">
+    <div style="max-width:780px;">
+      <span class="eyebrow">Trust &amp; Security</span>
+      <h1 class="display-l" style="color:#fff;margin-bottom:24px;">Built with privacy first. Built for enterprise security.</h1>
+      <p class="lead" style="color:rgba(255,255,255,0.78);">SafetyConnect captures the data your safety team needs, and nothing more. Every product decision starts with the question: <em>will this respect employee privacy and meet enterprise security standards?</em></p>
+      <div class="hero-actions" style="margin-top:32px;">
+        <a href="#" class="btn btn-primary btn-lg">Talk to our security team</a>
+      </div>
+    </div>
+    <!-- Cert strip -->
+    <div style="margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);">
+      <div style="background:var(--navy);padding:24px;text-align:center;">
+        <div style="font-size:11px;color:var(--teal);letter-spacing:0.1em;margin-bottom:8px;">CERTIFIED</div>
+        <div style="font-size:18px;font-weight:600;color:#fff;">ISO 27001</div>
+      </div>
+      <div style="background:var(--navy);padding:24px;text-align:center;">
+        <div style="font-size:11px;color:var(--teal);letter-spacing:0.1em;margin-bottom:8px;">ALIGNED</div>
+        <div style="font-size:18px;font-weight:600;color:#fff;">GDPR Ready</div>
+      </div>
+      <div style="background:var(--navy);padding:24px;text-align:center;">
+        <div style="font-size:11px;color:var(--teal);letter-spacing:0.1em;margin-bottom:8px;">COMPLIANT</div>
+        <div style="font-size:18px;font-weight:600;color:#fff;">India DPDP</div>
+      </div>
+      <div style="background:var(--navy);padding:24px;text-align:center;">
+        <div style="font-size:11px;color:var(--teal);letter-spacing:0.1em;margin-bottom:8px;">TESTED</div>
+        <div style="font-size:18px;font-weight:600;color:#fff;">Annual pentest</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy by design -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Privacy by design</span>
+        <h2 class="display-m">Privacy by design, not as an afterthought.</h2>
+        <p class="text-secondary body-l mt-3">The most common reason organisations hesitate to deploy a driving safety platform is the fear that it will become a surveillance tool. We built SafetyConnect to make that fear concretely unjustified.</p>
+      </div>
+      <div>
+        <div style="border-top:1px solid var(--steel-200);">
+          <div style="padding:24px 0;border-bottom:1px solid var(--steel-200);">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--pink);min-width:32px;padding-top:2px;">01</div>
+              <div>
+                <h3 class="h3 mb-2">Business-hours-only by default</h3>
+                <p class="text-secondary body">The driver app captures trips during working hours only. Employees control whether trips outside work hours are recorded, and the organisation can disable personal-time capture entirely.</p>
+              </div>
+            </div>
+          </div>
+          <div style="padding:24px 0;border-bottom:1px solid var(--steel-200);">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--pink);min-width:32px;padding-top:2px;">02</div>
+              <div>
+                <h3 class="h3 mb-2">No camera, no audio</h3>
+                <p class="text-secondary body">The driver app uses standard phone sensors (GPS, accelerometer, gyroscope) only. We do not capture video, photos, or audio from employee phones.</p>
+              </div>
+            </div>
+          </div>
+          <div style="padding:24px 0;border-bottom:1px solid var(--steel-200);">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--pink);min-width:32px;padding-top:2px;">03</div>
+              <div>
+                <h3 class="h3 mb-2">Data minimization</h3>
+                <p class="text-secondary body">We collect only the data needed for safety insights. Driver scores, trip events, and risk patterns, not personal location histories, contacts, messages, or app usage.</p>
+              </div>
+            </div>
+          </div>
+          <div style="padding:24px 0;border-bottom:1px solid var(--steel-200);">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--pink);min-width:32px;padding-top:2px;">04</div>
+              <div>
+                <h3 class="h3 mb-2">Role-based access</h3>
+                <p class="text-secondary body">Line managers see their team's data. Safety leaders see group-wide patterns. HR sees compliance metrics. Employees see their own scores and trends.</p>
+              </div>
+            </div>
+          </div>
+          <div style="padding:24px 0;">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--pink);min-width:32px;padding-top:2px;">05</div>
+              <div>
+                <h3 class="h3 mb-2">Recognition over surveillance</h3>
+                <p class="text-secondary body">The SafetyConnect Score is designed to reward safe driving and surface top performers, not to punish. Gamified feedback and coaching are the default workflow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security & compliance -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Security &amp; compliance</span><h2 class="display-m">Enterprise-grade security as standard.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><path d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">ISO 27001 certified</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Independently audited information security management system. Certificate available on request.</div>
+      </div>
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Encryption in transit and at rest</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">TLS 1.2+ for all data in transit. AES-256 for all data at rest in our cloud environments.</div>
+      </div>
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Access controls</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Role-based access control (RBAC) for all user types. SSO via SAML 2.0 and OAuth 2.0. MFA available for admin roles.</div>
+      </div>
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Audit logs</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Every user action, login, data access, configuration change, data export, is logged with user ID, timestamp, and source IP.</div>
+      </div>
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Vulnerability management</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Regular penetration testing by independent firms. Continuous vulnerability scanning. Documented incident response process.</div>
+      </div>
+      <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.5" style="margin-bottom:14px;"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M12 7v5l3 3"/></svg>
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px;">Backup &amp; disaster recovery</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Automated daily backups with multi-region redundancy. Documented RTO and RPO targets for enterprise customers.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Data residency -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Data residency</span>
+        <h2 class="display-m">Where your data lives, and who can access it.</h2>
+        <p class="text-secondary body-l mt-3 mb-3">SafetyConnect is hosted on AWS, with the flexibility to host your data in the region your security and compliance policies require. Customer data is logically isolated by tenant, and customers retain full ownership of their data.</p>
+        <p class="text-secondary body-l">SafetyConnect does not access customer data except for documented support purposes with customer permission.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="padding:20px;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">INFRASTRUCTURE</div>
+          <div style="font-size:18px;font-weight:600;color:var(--navy);">AWS</div>
+          <div style="font-size:13px;color:var(--steel-700);margin-top:4px;">Enterprise-grade cloud, ISO 27001 certified</div>
+        </div>
+        <div style="padding:20px;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">RESIDENCY</div>
+          <div style="font-size:18px;font-weight:600;color:var(--navy);">Region of your choice</div>
+          <div style="font-size:13px;color:var(--steel-700);margin-top:4px;">Hosted in the AWS region your policies require</div>
+        </div>
+        <div style="padding:20px;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">ISOLATION</div>
+          <div style="font-size:18px;font-weight:600;color:var(--navy);">Per-tenant</div>
+          <div style="font-size:13px;color:var(--steel-700);margin-top:4px;">Each customer's data logically isolated</div>
+        </div>
+        <div style="padding:20px;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">OPTION</div>
+          <div style="font-size:18px;font-weight:600;color:var(--navy);">On-premise</div>
+          <div style="font-size:13px;color:var(--steel-700);margin-top:4px;">Available for regulated industries</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer governance -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Governance</span><h2 class="display-m">Customers control their data.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;">Data ownership</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Customer data is the customer's property. SafetyConnect is the data processor, not the controller.</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;">Data export</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Customers can export their full dataset in standard formats (CSV, JSON, PDF) at any time.</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;">Data deletion</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">On termination, customer data is deleted from production systems within 30 days and from backups within 90 days.</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;">DPA available</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.55;">Standard DPA available for customers operating under GDPR, India DPDP Act, or other data protection frameworks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Documentation (available on request, no public downloads) -->
+<section class="section surface-white" id="download">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Documentation</span><h2 class="display-m">Documentation available on request.</h2>
+      <p>We share our full security documentation with your IT and security teams on request, rather than as public downloads. Tell our security team what your review needs and we will provide it.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">CERTIFICATE</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">ISO 27001</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">WHITEPAPER</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">Security architecture</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">TEMPLATE</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">Data Processing Agreement</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">ASSESSMENT</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">CAIQ / SIG-Lite</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">SUMMARY</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">Penetration test letter</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+        <div><div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">POLICY</div><div style="font-size:15px;font-weight:600;color:var(--navy);margin-top:2px;">Privacy &amp; AUP</div></div>
+        <span style="font-size:11px;color:var(--steel-500);border:1px solid var(--steel-200);border-radius:20px;padding:3px 11px;white-space:nowrap;">On request</span>
+      </div>
+    </div>
+    <div style="margin-top:30px;text-align:center;"><a href="#" class="btn btn-primary">Request documentation from our security team</a></div>
+  </div>
+</section>
+
+<!-- Talk to security CTA -->
+<section class="surface-navy" style="padding:80px 0;">
+  <div class="container" style="text-align:center;max-width:780px;margin:0 auto;">
+    <span class="eyebrow" style="display:inline-block;">Direct contact</span>
+    <h2 class="display-m" style="color:#fff;margin-bottom:20px;">Have a question we haven't answered?</h2>
+    <p style="font-size:18px;color:rgba(255,255,255,0.78);margin-bottom:32px;">Enterprise security and procurement teams are welcome to talk to ours directly. We respond to security questionnaires, run vendor assessments, and sit on calls with your CISO's team.</p>
+    <a href="#" class="btn btn-primary btn-lg">Talk to our security team</a>
+  </div>
+</section>
+
+  <SiteFooter />
+
+</BaseLayout>

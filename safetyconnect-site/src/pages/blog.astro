@@ -1,0 +1,273 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Resources — guides on workplace safety | SafetyConnect"
+  description="Practical guides on driving, process, and forklift safety for EHS teams."
+>
+  <SiteNav />
+
+<!-- Blog header -->
+<section class="surface-white" style="padding:72px 0 48px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;">
+      <div style="max-width:720px;">
+        <span class="eyebrow">Resources</span>
+        <h1 class="display-l" style="margin-bottom:16px;">Industrial safety, in practice.</h1>
+        <p class="lead">Field notes from EHS leaders, deployment playbooks from our customer success team, and the occasional opinion on where industrial safety is going next.</p>
+      </div>
+      <!-- Search -->
+      <div style="display:flex;gap:8px;align-items:center;">
+        <input type="text" placeholder="Search articles..." style="padding:11px 16px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;width:260px;font-family:inherit;">
+        <button class="btn btn-secondary">Search</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Topic filter strip -->
+<section class="surface-white hairline-top hairline-bottom" style="padding:16px 0;">
+  <div class="container">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <span style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-right:8px;">FILTER BY TOPIC:</span>
+      <a href="#" style="padding:6px 14px;border-radius:20px;background:var(--navy);color:#fff;font-size:13px;text-decoration:none;font-weight:500;">All</a>
+      <a href="#driving" style="padding:6px 14px;border-radius:20px;background:var(--surface-2);color:var(--steel-700);font-size:13px;text-decoration:none;font-weight:500;border:1px solid var(--steel-200);">Driving Safety</a>
+      <a href="#process" style="padding:6px 14px;border-radius:20px;background:var(--surface-2);color:var(--steel-700);font-size:13px;text-decoration:none;font-weight:500;border:1px solid var(--steel-200);">Process Safety</a>
+      <a href="#industry" style="padding:6px 14px;border-radius:20px;background:var(--surface-2);color:var(--steel-700);font-size:13px;text-decoration:none;font-weight:500;border:1px solid var(--steel-200);">Industry Insights</a>
+      <a href="#regulatory" style="padding:6px 14px;border-radius:20px;background:var(--surface-2);color:var(--steel-700);font-size:13px;text-decoration:none;font-weight:500;border:1px solid var(--steel-200);">Regulatory</a>
+      <a href="#case-studies" style="padding:6px 14px;border-radius:20px;background:var(--surface-2);color:var(--steel-700);font-size:13px;text-decoration:none;font-weight:500;border:1px solid var(--steel-200);">Case studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured editorial -->
+<section class="section surface-white" style="padding-top:48px;">
+  <div class="container">
+    <span class="eyebrow">Editor's pick</span>
+    <a href="#" style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;text-decoration:none;color:inherit;">
+      <!-- Featured visual -->
+      <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy) 0%,var(--navy) 40%,var(--teal) 100%);border-radius:12px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:24px;left:24px;font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.1em;">FIELD NOTE · 14 MIN READ</div>
+        <!-- Stylized score grid -->
+        <div style="position:absolute;inset:80px 40px 40px;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;">
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.95;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.7;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--steel-400);opacity:0.7;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.9;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--pink);opacity:0.8;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.95;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.85;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--pink);opacity:0.6;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.9;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--steel-400);opacity:0.6;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.95;border-radius:4px;"></div>
+          <div style="aspect-ratio:1;background:var(--teal);opacity:0.8;border-radius:4px;"></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;text-transform:uppercase;margin-bottom:12px;">DRIVING SAFETY</div>
+        <h2 class="display-m" style="margin-bottom:16px;line-height:1.15;">What 100,000 trips taught us about why employees ignore safety alerts.</h2>
+        <p style="font-size:17px;color:var(--steel-700);line-height:1.55;margin-bottom:24px;">The dashboards show distraction. The training covers fatigue. The policy bans phone use. And the same five behaviours still show up every week. Here's what changed when we redesigned coaching to start with recognition instead of penalty.</p>
+        <div style="display:flex;gap:16px;align-items:center;font-size:13px;color:var(--steel-600);">
+          <span>SafetyConnect Team</span><span>·</span><span>17 May 2026</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Recent posts (3-up) -->
+<section class="section surface-white" style="padding-top:48px;padding-bottom:64px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <h3 class="h1">Latest</h3>
+      <a href="#" class="btn-tertiary arrow-right">View all 109 articles</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;">
+      <!-- Post 1 -->
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,var(--steel-200) 0%,var(--steel-400) 100%);border-radius:8px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"><path d="M3 21h18M5 21V8l7-4 7 4v13"/></svg>
+        </div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">PROCESS SAFETY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">A 6-step framework for digitising your permit-to-work process.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;margin-bottom:14px;">From audit-trail gaps to a fully mobile PTW workflow, without losing the rigour your safety committee depends on.</p>
+        <div style="font-size:12px;color:var(--steel-600);">10 May 2026 · 9 min read</div>
+      </a>
+      <!-- Post 2 -->
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,var(--teal) 0%,var(--navy) 100%);border-radius:8px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">DRIVING SAFETY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Why business-hours-only is the question every EHS Head should ask vendors.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;margin-bottom:14px;">If the answer is hand-wavy, you're looking at a surveillance product wearing a safety badge.</p>
+        <div style="font-size:12px;color:var(--steel-600);">03 May 2026 · 6 min read</div>
+      </a>
+      <!-- Post 3 -->
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,var(--pink) 0%,var(--navy) 100%);border-radius:8px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        </div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">REGULATORY</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Mapping OSHA 1910.119 to the OSH Code: what changed for plants in India.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;margin-bottom:14px;">A side-by-side reading for safety leaders comparing PSM frameworks across geographies.</p>
+        <div style="font-size:12px;color:var(--steel-600);">28 Apr 2026 · 12 min read</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BY TOPIC: Driving Safety -->
+<section class="section surface-steel" id="driving" style="padding-top:64px;padding-bottom:56px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Driving Safety</span>
+        <h3 class="h1" style="margin-top:4px;">On the road</h3>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All 42 driving safety posts</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;transition:border-color 200ms;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">FIELD NOTE</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">How a leading FMCG cut accidents 73% in 18 months.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">22 Apr 2026</div>
+      </a>
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">METHODOLOGY</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">The SafetyConnect Score, explained.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">15 Apr 2026</div>
+      </a>
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">PRACTICE</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">Coaching: what to do with the bottom 10% of your driver scores.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">08 Apr 2026</div>
+      </a>
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">DEPLOYMENT</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">Why we don't ship dashcams.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">01 Apr 2026</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BY TOPIC: Process Safety -->
+<section class="section surface-white" id="process" style="padding-top:64px;padding-bottom:56px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Process Safety</span>
+        <h3 class="h1" style="margin-top:4px;">In the plant</h3>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All 38 process safety posts</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <a href="#" style="background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">PRACTICE</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">A guide to how safety leaders respond to workplace accidents.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">25 Apr 2026</div>
+      </a>
+      <a href="#" style="background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">METHODOLOGY</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">Incident reporting: the what, why, and how.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">18 Apr 2026</div>
+      </a>
+      <a href="#" style="background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">DEEP DIVE</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">The role of CAPA Tracking in compliance and audit-readiness.</h5>
+        <div style="font-size:12px;color:var(--steel-600);">11 Apr 2026</div>
+      </a>
+      <a href="#" style="background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:24px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;">PRACTICE</div>
+        <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.35;margin-top:8px;margin-bottom:12px;">Safety audit vs safety inspection: what's the difference?</h5>
+        <div style="font-size:12px;color:var(--steel-600);">04 Apr 2026</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BY TOPIC: Industry Insights -->
+<section class="section surface-steel" id="industry" style="padding-top:64px;padding-bottom:56px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Industry insights</span>
+        <h3 class="h1" style="margin-top:4px;">From the field</h3>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All 19 insights</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:28px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;margin-bottom:12px;">CONFERENCE</div>
+        <h5 style="font-size:17px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:12px;">PSCI India: key insights from the floor.</h5>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.5;">What's shifting in pharma supply-chain safety as global procurement standards tighten on Indian manufacturers.</p>
+      </a>
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:28px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;margin-bottom:12px;">HOP</div>
+        <h5 style="font-size:17px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:12px;">Why HOP (Human and Organisational Performance) is reshaping safety thinking.</h5>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.5;">A pragmatic look at HOP for safety teams who don't have time for theory.</p>
+      </a>
+      <a href="#" style="background:#fff;border:1px solid var(--steel-200);border-radius:8px;padding:28px;text-decoration:none;color:inherit;">
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;margin-bottom:12px;">CASE STUDY</div>
+        <h5 style="font-size:17px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:12px;">Fuel dispenser manufacturer: field service safety transformation.</h5>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.5;">How driver monitoring reduced accidents and lost man-hours across a national service network.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BY TOPIC: Regulatory -->
+<section class="section surface-white" id="regulatory" style="padding-top:64px;padding-bottom:56px;">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Regulatory</span>
+        <h3 class="h1" style="margin-top:4px;">Frameworks &amp; compliance</h3>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All 10 regulatory posts</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <a href="#" style="display:grid;grid-template-columns:120px 1fr;gap:20px;background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:20px;text-decoration:none;color:inherit;align-items:center;">
+        <div style="aspect-ratio:1;background:linear-gradient(135deg,var(--navy),var(--steel-600));border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.05em;">ISO 45001</div>
+        <div>
+          <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:8px;">ISO 45001 audit prep, what your software needs to do.</h5>
+          <div style="font-size:12px;color:var(--steel-600);">7 min read</div>
+        </div>
+      </a>
+      <a href="#" style="display:grid;grid-template-columns:120px 1fr;gap:20px;background:var(--surface-2);border:1px solid var(--steel-200);border-radius:8px;padding:20px;text-decoration:none;color:inherit;align-items:center;">
+        <div style="aspect-ratio:1;background:linear-gradient(135deg,var(--navy),var(--teal));border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.05em;">DPDP</div>
+        <div>
+          <h5 style="font-size:16px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:8px;">India DPDP Act: what safety platforms must change.</h5>
+          <div style="font-size:12px;color:var(--steel-600);">9 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter signup -->
+<section class="surface-navy" style="padding:72px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <div>
+        <span class="eyebrow" style="display:inline-block;">Subscribe</span>
+        <h2 class="display-m" style="color:#fff;margin-top:16px;margin-bottom:12px;">One thoughtful safety read a month.</h2>
+        <p style="font-size:17px;color:rgba(255,255,255,0.78);">No promotional spam, no newsletter inflation. One field-tested article on driving safety, process safety, or industrial regulation, delivered monthly. Unsubscribe in a click.</p>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <input type="email" placeholder="Your work email" style="flex:1;padding:14px 16px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#fff;border-radius:6px;font-size:15px;font-family:inherit;">
+        <button class="btn btn-primary btn-lg">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <SiteFooter />
+
+</BaseLayout>

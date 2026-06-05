@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Pricing — built on products, employees, and sites | SafetyConnect"
+  description="Transparent pricing drivers and a per-product ROI calculator. Get a real number in a 30-minute call."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="max-width:780px;">
+      <span class="eyebrow">Pricing</span>
+      <h1 class="display-l" style="margin-bottom:24px;">Three things drive your SafetyConnect price.</h1>
+      <p class="lead">Most enterprise safety platforms hide pricing behind a sales gate. We don't list a number either, because the right number depends on three variables you can tell us in 30 seconds, but we'd rather show you the calculation than guess. Below: how pricing works, a working ROI calculator on your own numbers, and what every deployment includes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Three things drive pricing -->
+<section class="section surface-steel" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">How it works</span><h2 class="display-m">Three things drive your pricing.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;">
+        <div class="lead-num">01</div>
+        <h3 class="h3 mb-2 mt-3">Modules</h3>
+        <p class="text-secondary body">Driving Safety, the Process Safety modules (permits, observations, incidents, audits, actions), Forklift Safety, Safety Intelligence, or any combination. You pay for what you deploy.</p>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;">
+        <div class="lead-num">02</div>
+        <h3 class="h3 mb-2 mt-3">Employees</h3>
+        <p class="text-secondary body">Drivers for Driving Safety. Plant employees and contractors for Process Safety. Volume-based slabs.</p>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;">
+        <div class="lead-num">03</div>
+        <h3 class="h3 mb-2 mt-3">Sites</h3>
+        <p class="text-secondary body">Number of plants, depots, or operating locations. Larger footprints get better unit economics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI calculator (per product) -->
+<style>
+.roi-tab{padding:12px 24px;background:#fff;border:1px solid var(--steel-200);border-bottom:none;border-radius:8px 8px 0 0;font-family:inherit;font-size:14px;font-weight:600;color:var(--steel-600);cursor:pointer;transition:color 150ms,background 150ms;}
+.roi-tab--active{color:var(--navy);background:#fff;box-shadow:inset 0 -3px 0 var(--pink);}
+.roi-tab:hover{color:var(--navy);}
+</style>
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center"><span class="eyebrow">ROI calculator</span><h2 class="display-m">What is the saving on your scenario?</h2><p>Pick a product, enter your own numbers, and see the estimated annual impact. These figures estimate your savings, not the price of SafetyConnect.</p></div>
+    <div style="max-width:920px;margin:0 auto;">
+      <div style="display:flex;gap:6px;">
+        <button class="roi-tab roi-tab--active" data-roi="driving">Driving Safety</button>
+        <button class="roi-tab" data-roi="process">Process Safety</button>
+        <button class="roi-tab" data-roi="forklift">Forklift Safety</button>
+      </div>
+<div class="roi-panel" id="roi-panel-driving" style="display:grid;grid-template-columns:1fr 1.3fr;gap:48px;background:#fff;padding:40px;border:1px solid var(--steel-200);border-radius:0 0 12px 12px;border-top:none;"><div><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">YOUR DEPLOYMENT</div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Drivers</label><input type="number" id="rd-drivers" value="250" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Road incidents per year</label><input type="number" id="rd-incidents" value="24" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Average cost per incident (₹)</label><input type="number" id="rd-cost" value="250000" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div></div><div style="border-left:1px solid var(--steel-200);padding-left:48px;"><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">ESTIMATED ANNUAL IMPACT</div><div style="display:flex;flex-direction:column;gap:14px;"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Road accidents avoided per year</span><span id="rd-out-avoided" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Accident cost avoided</span><span id="rd-out-cost" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="padding-top:8px;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:15px;color:var(--navy);font-weight:600;">Estimated annual saving</span><span id="rd-out-total" style="font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:var(--pink);">—</span></div></div></div><p style="font-size:12px;color:var(--steel-600);margin-top:20px;line-height:1.5;">Conservative estimates based on outcomes seen across SafetyConnect deployments. Your actual figures depend on your incident baseline, your industry, and your operating geography. This estimates your savings, not the price of the platform.</p><a href="#" class="btn btn-primary" style="margin-top:16px;">Get my detailed ROI in a 30-min call</a></div></div><div class="roi-panel" id="roi-panel-process" style="display:none;grid-template-columns:1fr 1.3fr;gap:48px;background:#fff;padding:40px;border:1px solid var(--steel-200);border-radius:0 0 12px 12px;border-top:none;"><div><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">YOUR DEPLOYMENT</div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Plant employees &amp; contractors</label><input type="number" id="rp-emp" value="800" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Recordable incidents per year</label><input type="number" id="rp-incidents" value="40" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Average cost per incident (₹)</label><input type="number" id="rp-cost" value="300000" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Annual compliance penalty exposure (₹)</label><input type="number" id="rp-penalty" value="2000000" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div></div><div style="border-left:1px solid var(--steel-200);padding-left:48px;"><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">ESTIMATED ANNUAL IMPACT</div><div style="display:flex;flex-direction:column;gap:14px;"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Incidents avoided per year (55%)</span><span id="rp-out-avoided" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Incident cost avoided</span><span id="rp-out-cost" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Penalty exposure avoided (70%)</span><span id="rp-out-penalty" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="padding-top:8px;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:15px;color:var(--navy);font-weight:600;">Estimated annual saving</span><span id="rp-out-total" style="font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:var(--pink);">—</span></div></div></div><p style="font-size:12px;color:var(--steel-600);margin-top:20px;line-height:1.5;">Conservative estimates based on outcomes seen across SafetyConnect deployments. Your actual figures depend on your incident baseline, your industry, and your operating geography. This estimates your savings, not the price of the platform.</p><a href="#" class="btn btn-primary" style="margin-top:16px;">Get my detailed ROI in a 30-min call</a></div></div><div class="roi-panel" id="roi-panel-forklift" style="display:none;grid-template-columns:1fr 1.3fr;gap:48px;background:#fff;padding:40px;border:1px solid var(--steel-200);border-radius:0 0 12px 12px;border-top:none;"><div><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">YOUR DEPLOYMENT</div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Forklifts</label><input type="number" id="rf-forklifts" value="30" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Near-misses per year</label><input type="number" id="rf-nearmiss" value="120" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div><div style="margin-bottom:18px;"><label style="display:block;font-size:13px;color:var(--navy);font-weight:500;margin-bottom:6px;">Average annual cost per forklift (₹)</label><input type="number" id="rf-cost" value="600000" min="0" style="width:100%;padding:11px 14px;border:1px solid var(--steel-300);border-radius:6px;font-size:16px;font-family:inherit;color:var(--navy);"></div></div><div style="border-left:1px solid var(--steel-200);padding-left:48px;"><div style="font-size:12px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:22px;">ESTIMATED ANNUAL IMPACT</div><div style="display:flex;flex-direction:column;gap:14px;"><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Near-misses avoided per year (50%)</span><span id="rf-out-nm" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--steel-100);"><span style="font-size:14px;color:var(--steel-700);">Utilisation savings (right-sizing 20%)</span><span id="rf-out-util" style="font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:var(--navy);">—</span></div><div style="padding-top:8px;"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:15px;color:var(--navy);font-weight:600;">Estimated annual saving</span><span id="rf-out-total" style="font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:var(--pink);">—</span></div></div></div><p style="font-size:12px;color:var(--steel-600);margin-top:20px;line-height:1.5;">Conservative estimates based on outcomes seen across SafetyConnect deployments. Your actual figures depend on your incident baseline, your industry, and your operating geography. This estimates your savings, not the price of the platform.</p><a href="#" class="btn btn-primary" style="margin-top:16px;">Get my detailed ROI in a 30-min call</a></div></div>
+    </div>
+  </div>
+</section>
+<!-- What's included -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Included as standard</span><h2 class="display-m">What’s included in every deployment.</h2></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px 64px;max-width:920px;">
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Unlimited admin users</div><div style="font-size:14px;color:var(--steel-700);">Add safety managers, HR, and ops admins at no extra charge.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">All standard integrations</div><div style="font-size:14px;color:var(--steel-700);">HRIS, SSO, and common ERPs included. Custom integrations available.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Onboarding &amp; training</div><div style="font-size:14px;color:var(--steel-700);">Implementation specialist for every customer. Live training for admins and managers.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">ISO 27001 security</div><div style="font-size:14px;color:var(--steel-700);">The same security standard regardless of deployment size. No upcharge for enterprise security.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Data export, anytime</div><div style="font-size:14px;color:var(--steel-700);">Your data, your formats, your timeline. CSV, JSON, PDF on request.</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><path d="M5 12l5 5L20 7"/></svg>
+        <div><div style="font-weight:600;color:var(--navy);margin-bottom:4px;">Product roadmap input</div><div style="font-size:14px;color:var(--steel-700);">Quarterly product review available for every customer.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services offering -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Beyond the platform</span>
+      <h2 class="display-m">Services you can add to any deployment.</h2>
+      <p>The platform is the tool. When you need more than software, these are available as part of your commercial package, all delivered by our own team.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Training</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">PSM fundamentals, HIRA and JSA, incident investigation, and audit readiness, run for your team by ours. Onboarding and admin training are included as standard; deeper methodology training is an add-on.</p>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Managed services</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">For teams without dedicated analytics or admin bandwidth, we run the platform alongside you, with reporting, programme reviews, and adoption support, priced by scope.</p>
+      </div>
+      <div style="padding:32px;background:#fff;border:1px solid var(--steel-200);border-radius:12px;">
+        <div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3 style="font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px;">Counselling</h3>
+        <p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">Behaviour change is what closes the last mile on safety. We counsel individuals and teams when the data shows someone needs more than a workflow, available as an ongoing engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on pricing.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Why don't you list prices on the page?</summary><div class="faq-a">Pricing depends on the mix of products, employee count, and number of sites, so any single figure on a page would be misleading. The three drivers above show how it is built up, the calculator shows the value side, and a 30-minute call gives you a real number rather than a placeholder.</div></details>
+      <details class="faq-item"><summary class="faq-q">Is there a free trial?</summary><div class="faq-a">No free trial in the traditional sense. We do run paid pilots, typically 60-90 days, one site or one driver group, to give your team a chance to validate the platform on a real deployment before scaling.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can we add modules later?</summary><div class="faq-a">Yes. The platform is modular. Most of our largest customers start with one product and expand over 6–12 months.</div></details>
+      <details class="faq-item"><summary class="faq-q">Are there setup fees?</summary><div class="faq-a">A one-time implementation fee covers onboarding, integration setup, and initial training. The fee scales with complexity but is typically equal to 1–2 months of subscription.</div></details>
+      <details class="faq-item"><summary class="faq-q">What about contracts?</summary><div class="faq-a">Annual is standard. Multi-year commitments unlock better pricing. Month-to-month is available for pilots.</div></details>
+      <details class="faq-item"><summary class="faq-q">Do you publish discounts for non-profits or SMBs?</summary><div class="faq-a">We don't publish a non-profit rate, but we work with customers across budget ranges. Talk to us.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Get a real number</span>
+  <h2 class="display-m">Get a real quote in 30 minutes.</h2>
+  <p>Walk through your deployment with our team. Leave the call with a quote you can take to your CFO.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+  </div>
+</div></section>
+
+  <SiteFooter />
+
+<script>
+// ROI calculator (pricing page) - per product
+function initROI(){
+  const fmtINR = n => {
+    n = Math.max(0, Math.round(n));
+    if (n >= 10000000){ let v=(n/10000000); return '\u20b9' + (v % 1 === 0 ? v.toFixed(0) : v.toFixed(1)) + ' Cr'; }
+    if (n >= 100000) return '\u20b9' + Math.round(n/100000).toLocaleString('en-IN') + 'L';
+    return '\u20b9' + n.toLocaleString('en-IN');
+  };
+  const num = id => { const el = document.getElementById(id); return el ? (parseFloat(el.value)||0) : 0; };
+  const set = (id,v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  const cnt = n => (n < 10 ? n.toFixed(1) : Math.round(n).toLocaleString('en-IN'));
+
+  function calcDriving(){
+    const inc = num('rd-incidents'), cost = num('rd-cost');
+    const avoided = inc * 0.60, save = avoided * cost;
+    set('rd-out-avoided', cnt(avoided)); set('rd-out-cost', fmtINR(save)); set('rd-out-total', fmtINR(save));
+  }
+  function calcProcess(){
+    const inc = num('rp-incidents'), cost = num('rp-cost'), pen = num('rp-penalty');
+    const avoided = inc * 0.55, incSave = avoided * cost, penSave = pen * 0.70;
+    set('rp-out-avoided', cnt(avoided)); set('rp-out-cost', fmtINR(incSave));
+    set('rp-out-penalty', fmtINR(penSave)); set('rp-out-total', fmtINR(incSave + penSave));
+  }
+  function calcForklift(){
+    const fk = num('rf-forklifts'), nm = num('rf-nearmiss'), cost = num('rf-cost');
+    const nmAvoided = nm * 0.50, util = fk * cost * 0.20;
+    set('rf-out-nm', cnt(nmAvoided)); set('rf-out-util', fmtINR(util)); set('rf-out-total', fmtINR(util));
+  }
+  const recalc = { driving: calcDriving, process: calcProcess, forklift: calcForklift };
+  if (!document.getElementById('rd-drivers')) return;
+  Object.keys(recalc).forEach(k=>{
+    const panel = document.getElementById('roi-panel-'+k);
+    if (panel) panel.querySelectorAll('input').forEach(i=> i.addEventListener('input', recalc[k]));
+  });
+  document.querySelectorAll('.roi-tab').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const t = btn.getAttribute('data-roi');
+      document.querySelectorAll('.roi-tab').forEach(b=> b.classList.toggle('roi-tab--active', b===btn));
+      ['driving','process','forklift'].forEach(k=>{
+        const p = document.getElementById('roi-panel-'+k);
+        if (p) p.style.display = (k===t) ? 'grid' : 'none';
+      });
+      recalc[t]();
+    });
+  });
+  calcDriving(); calcProcess(); calcForklift();
+}
+document.addEventListener('DOMContentLoaded', initROI);
+</script>
+</BaseLayout>

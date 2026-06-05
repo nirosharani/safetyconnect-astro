@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Forklift Safety — prevent material-handling incidents | SafetyConnect"
+  description="Reduce forklift incidents with impact detection, access control, and utilisation analytics across every site and shift."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <span class="eyebrow">Forklift Safety</span>
+        <h1 class="display-l" style="margin-bottom:24px;">In-plant vehicle safety, without the guesswork.</h1>
+        <p class="lead">Forklifts cause more in-plant injuries than almost any other equipment, and most safety teams have no real-time visibility into where, when, or why. SafetyConnect's Forklift Safety Suite maps every incident hotspot, scores every operator, and tracks every vehicle in real time.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <!-- Hotspot heatmap mock -->
+      <div class="product-ui">
+        <div class="product-ui__chrome">
+          <span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span>
+          <span class="product-ui__url">app.safetyconnect.io / forklift / hotspots</span>
+        </div>
+        <div style="padding:0;">
+          <div style="background:var(--navy);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.06em;">WAREHOUSE 3 · ZONE HEATMAP</div>
+              <div style="font-size:15px;font-weight:600;margin-top:2px;">Risk events · Last 7 days</div>
+            </div>
+            <div style="font-size:11px;background:rgba(240,80,112,0.18);color:#FFB8C4;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.04em;">12 INCIDENTS</div>
+          </div>
+          <!-- Heatmap grid -->
+          <div style="padding:24px;background:#FAFBFC;">
+            <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:3px;aspect-ratio:10/6;">
+              <!-- Generated heatmap pattern -->
+              <div style="background:var(--steel-100);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:rgba(25,167,206,0.20);"></div><div style="background:rgba(25,167,206,0.35);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div><div style="background:rgba(143,175,194,0.4);"></div><div style="background:rgba(143,175,194,0.5);"></div>
+              <div style="background:var(--steel-100);"></div><div style="background:rgba(25,167,206,0.20);"></div><div style="background:rgba(25,167,206,0.40);"></div><div style="background:rgba(25,167,206,0.55);"></div><div style="background:rgba(143,175,194,0.6);"></div><div style="background:rgba(240,80,112,0.4);"></div><div style="background:rgba(143,175,194,0.5);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div>
+              <div style="background:rgba(25,167,206,0.20);"></div><div style="background:rgba(25,167,206,0.45);"></div><div style="background:rgba(143,175,194,0.6);"></div><div style="background:rgba(240,80,112,0.65);"></div><div style="background:rgba(240,80,112,0.85);"></div><div style="background:rgba(240,80,112,0.55);"></div><div style="background:rgba(143,175,194,0.5);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div>
+              <div style="background:rgba(25,167,206,0.30);"></div><div style="background:rgba(143,175,194,0.5);"></div><div style="background:rgba(240,80,112,0.4);"></div><div style="background:rgba(240,80,112,0.7);"></div><div style="background:rgba(240,80,112,0.95);position:relative;"><span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:9px;font-weight:700;">7</span></div><div style="background:rgba(240,80,112,0.45);"></div><div style="background:rgba(143,175,194,0.45);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div>
+              <div style="background:var(--steel-100);"></div><div style="background:rgba(25,167,206,0.30);"></div><div style="background:rgba(143,175,194,0.4);"></div><div style="background:rgba(143,175,194,0.55);"></div><div style="background:rgba(240,80,112,0.35);"></div><div style="background:rgba(143,175,194,0.45);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div>
+              <div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div><div style="background:rgba(25,167,206,0.20);"></div><div style="background:rgba(25,167,206,0.30);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-200);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div><div style="background:var(--steel-100);"></div>
+            </div>
+            <div style="display:flex;gap:16px;justify-content:center;margin-top:18px;font-size:10px;color:var(--steel-600);">
+              <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:var(--steel-100);"></span>Low</span>
+              <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:rgba(25,167,206,0.45);"></span>Moderate</span>
+              <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:rgba(143,175,194,0.6);"></span>Elevated</span>
+              <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:rgba(240,80,112,0.9);"></span>Hotspot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The problem -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">The plant vehicle problem</span>
+      <h2 class="display-m">Forklifts are the highest-incident equipment in most plants.</h2>
+      <p>Roughly one in ten plant injuries involves a forklift, and the causes are remarkably consistent. Most plants have no real-time visibility into any of them.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:920px;margin:0 auto;">
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="3" stroke-opacity="0.4"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;min-height:1.3em;">Hidden hotspots</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Incidents cluster at the same blind corners, congested intersections, and shift-change zones. The pattern sits in your data unread, invisible to the team that could act on it.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M9 9l-2-2M15 9l2-2"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;min-height:1.3em;">Unverified operators</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">A vehicle key in the wrong hands is the most common starting point for a serious incident. Most plants have no automatic check that the person at the wheel is trained and authorised.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/><path d="M16 17l2 2 3-3" stroke="#F05070"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;min-height:1.3em;">No pre-trip discipline</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">The mandated daily safety check often becomes a tick-box on paper, when it happens at all. Defects find you the hard way, in the middle of a shift.</p></div>
+<div style="background:#fff;border:1px solid var(--steel-200);border-radius:12px;padding:28px;"><div style="width:48px;height:48px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/><path d="M21 6l-3 3M21 9l-3-3"/></svg></div><h3 style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.3;min-height:1.3em;">Behaviour you cannot see</h3><p style="font-size:14px;color:var(--steel-700);line-height:1.55;">Rash driving, harsh braking, overspeeding, and fatigue go unnoticed until a near-miss escalates. By the time it shows in an incident report, the chance to coach is gone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Capabilities: 2 spotlight + 9 standard = 11 -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Capabilities</span>
+      <h2 class="display-m">Eleven capabilities. One in-plant vehicle platform.</h2>
+      <p>In-vehicle hardware paired with the SafetyConnect Access app and a manager console. The two newest capabilities are highlighted below.</p>
+    </div>
+    <!-- Spotlight row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;">
+      <div style="background:#fff;border:1px solid var(--steel-200);border-radius:14px;padding:36px;display:flex;gap:24px;align-items:flex-start;"><div style="width:64px;height:64px;border-radius:14px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M9 8l-1-1M15 8l1-1M3 11h2M19 11h2"/></svg></div><div style="flex:1;"><div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--pink);letter-spacing:0.08em;margin-bottom:8px;">NEW IN THE ACCESS APP</div><h3 style="font-size:20px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.25;">Facial-recognition operator ID</h3><p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">Operators authenticate at the vehicle through the SafetyConnect Access app, with facial recognition that confirms the right person, with current training and authorisation, is at the wheel. Authentication status streams to the server in real time, so unauthorised starts never happen.</p></div></div>
+      <div style="background:#fff;border:1px solid var(--steel-200);border-radius:14px;padding:36px;display:flex;gap:24px;align-items:flex-start;"><div style="width:64px;height:64px;border-radius:14px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M8 11l2 2 5-5M9 17h6"/></svg></div><div style="flex:1;"><div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--pink);letter-spacing:0.08em;margin-bottom:8px;">NEW IN THE ACCESS APP</div><h3 style="font-size:20px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.25;">Pre-trip safety check</h3><p style="font-size:14.5px;color:var(--steel-700);line-height:1.55;">The mandated daily safety check moves from paper to the operator’s phone, completed before the vehicle starts. Photo evidence, defect flagging, and shift-by-shift trail, so the check is enforced, recorded, and audit-ready.</p></div></div>
+    </div>
+    <!-- Standard grid (9 cards, 3x3) -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/><circle cx="6" cy="6" r="1"/><circle cx="18" cy="18" r="1"/></svg></div><div class="card__title" style="min-height:2.6em;">Hotspot identification</div><div class="card__body">Heatmap of incident-prone zones across your warehouse or plant. Identify dangerous intersections, blind spots, and congestion patterns, and act on them before they cause harm.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div><div class="card__title" style="min-height:2.6em;">Operator scoring and coaching</div><div class="card__body">Per-operator safety scores based on driving behaviour, near-miss involvement, and incident history. Score-driven coaching turns the bottom decile into safer operators over a shift cycle.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12h3M19 12h3M12 2v3M12 19v3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div><div class="card__title" style="min-height:2.6em;">Live vehicle tracking</div><div class="card__body">Real-time location of every forklift across every site. State indicators (Parked, Idle, Moving, Inactive). Find any vehicle in seconds.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12M9 14h12"/></svg></div><div class="card__title" style="min-height:2.6em;">Vehicle overview</div><div class="card__body">Group-level view of your entire forklift inventory. Status, location, operator assignment, last maintenance, every detail your warehouse manager needs in one screen.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><div class="card__title" style="min-height:2.6em;">Utilisation analytics</div><div class="card__body">Identify under-utilised and over-utilised forklifts per day, per shift, per zone. Right-size your forklift count, optimise operator allocation, and stop renting vehicles you don’t need.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg></div><div class="card__title" style="min-height:2.6em;">Playback history</div><div class="card__body">Replay any incident or near-miss. See exactly what happened, when, and where. Reconstruct events for investigations and use them in operator training.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(25,167,206,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19A7CE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16V11M12 16V8M17 16v-3"/></svg></div><div class="card__title" style="min-height:2.6em;">Dashboards</div><div class="card__body">Customisable dashboards for EHS, operations, and plant heads. Decisions on operator safety, equipment utilisation, and incident trends, grounded in current data.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(240,80,112,0.10);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F05070" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 14h6M9 18h4"/></svg></div><div class="card__title" style="min-height:2.6em;">Operator score report</div><div class="card__body">Per-operator report card with score history, incident involvement, training completion, and recognition. The artefact your HR and safety committee already need at review time.</div></div>
+      <div class="card" style="display:flex;flex-direction:column;"><div style="width:44px;height:44px;border-radius:11px;background:rgba(26,39,68,0.09);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2744" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div class="card__title" style="min-height:2.6em;">Audio and in-app alerts</div><div class="card__body">Drivers get immediate audio and in-app alerts for overspeed, fatigue indicators, and unauthorised access attempts, so behaviour gets corrected in the moment, not at the next review.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Value-added services -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Value-added services</span>
+        <h2 class="display-m">Built for the roles that actually run the plant.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;margin-bottom:8px;">FOR EHS LEADERS</div>
+          <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Operator safety &amp; journey risk</div>
+          <div style="font-size:13.5px;color:var(--steel-700);line-height:1.55;">Dashboards, live tracking, safety overview reports, vehicle overview reports, near-miss reduction, incident alerts, operator behaviour analysis, safety culture shift, and operator counselling.</div>
+        </div>
+        <div style="padding:28px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;">
+          <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;margin-bottom:8px;">FOR OPERATIONS LEADS</div>
+          <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Order picking &amp; utilisation</div>
+          <div style="font-size:13.5px;color:var(--steel-700);line-height:1.55;">Order picking system (OPS) tracking, vehicle overview &amp; utilisation reports, asset tracking, route optimisation, and fulfilment centre insights.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Outcomes -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Outcomes</span><h2 class="display-m">What customers achieve.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--pink);line-height:1;">50%+</div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Reduction in near-miss events</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Within 6 months of deployment</div>
+      </div>
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">20–30%</div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Improvement in vehicle utilisation</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Through hotspot and idle-time analytics</div>
+      </div>
+      <div style="padding:32px;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:48px;font-weight:600;color:var(--navy);line-height:1;">100%</div>
+        <div style="font-size:14px;color:var(--navy);font-weight:600;margin-top:12px;">Incident traceability</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Every event replay-ready for investigation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Forklift Safety.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Do you require hardware on the forklifts?</summary><div class="faq-a">Yes. Forklift Safety uses a small in-vehicle device for accurate location tracking and operator behaviour detection, unlike Driving Safety, which runs on smartphone sensors. The hardware is straightforward to install and is included in the deployment package.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it work with all forklift types?</summary><div class="faq-a">Yes, counterbalance, reach trucks, order pickers, pallet trucks, and powered tugs. We've deployed across electric and IC forklifts, indoor and outdoor configurations.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does hotspot mapping work?</summary><div class="faq-a">The platform aggregates location data from all forklifts and overlays incident events (collisions, near-misses, harsh events, speed violations). Zones with elevated event density become hotspots, and you can drill into the underlying events to understand why.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can we integrate with our WMS or ERP?</summary><div class="faq-a">Yes. SAP, Oracle, and most major warehouse management systems integrate via standard APIs. Operator-level data syncs with HRIS for review cycles.</div></details>
+      <details class="faq-item"><summary class="faq-q">What about multi-site rollouts?</summary><div class="faq-a">Standard. Most of our Forklift Safety customers run multi-plant or multi-warehouse deployments. Dashboards roll up by plant, by region, and by group.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- Related reading -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;">
+      <div>
+        <span class="eyebrow">Related reading</span>
+        <h2 class="h1" style="margin-top:4px;">More on in-plant vehicle safety.</h2>
+      </div>
+      <a href="#" class="btn-tertiary arrow-right">All forklift safety articles</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--steel-700));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">HOTSPOTS</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">How to read a warehouse hotspot heatmap.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">The five patterns that show up in almost every plant, and the operational changes that resolve them.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--steel-300),var(--steel-700));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">OPERATOR COACHING</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">From rash to safe: a 90-day operator coaching playbook.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A practical, score-driven approach to coaching the bottom 10% of your forklift operators into the top half.</p>
+      </a>
+      <a href="#" style="text-decoration:none;color:inherit;">
+        <div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--pink));border-radius:8px;margin-bottom:16px;"></div>
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">UTILISATION</div>
+        <h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Right-sizing your forklift count without compromising throughput.</h4>
+        <p style="font-size:14px;color:var(--steel-700);line-height:1.5;">Vehicle utilisation data has a quiet second life as a procurement argument. Here's how to use it.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy & security strip (added QC v11 — audit: privacy reassurance on every product page) -->
+<section class="section surface-navy">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <div>
+        <span class="eyebrow">Privacy &amp; security</span>
+        <h2 class="display-m" style="color:#fff;">Safety data, scoped to what your team actually needs.</h2>
+        <p style="color:rgba(255,255,255,0.78);font-size:18px;line-height:1.55;margin-top:24px;margin-bottom:32px;">Forklift safety is about the vehicle, the zone, and the incident, not about monitoring individual operators. We capture the signals that prevent incidents and nothing collected &ldquo;just in case.&rdquo;</p>
+        <a href="#" class="btn btn-primary">Read our Trust &amp; Security commitments</a>
+      </div>
+      <div>
+        <div style="border-left:1px solid rgba(255,255,255,0.15);padding-left:24px;">
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Data minimisation by design</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Impact, speed, and access events tied to the forklift and the location, scoped to incident prevention.</div>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">Role-based access</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Supervisors see their zone, EHS sees compliance, operators see their own record. Nobody sees more than their role requires.</div>
+          </div>
+          <div style="padding:20px 0;">
+            <div style="font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;">ISO 27001 certified &middot; DPDP &amp; GDPR aligned</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.65);">Data residency options, documented sub-processors, and a clear deletion path. Full detail on the Trust &amp; Security page.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See Forklift Safety on your plant.</h2>
+  <p>30-minute walkthrough with a senior product specialist. Bring your forklift count, your sites, and your top incident type, we'll show you exactly how the platform would deploy.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+    <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+  </div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

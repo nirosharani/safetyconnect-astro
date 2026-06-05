@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Incident Management — report, investigate, close | SafetyConnect"
+  description="Frictionless reporting, structured 5-Why/fishbone investigation, and CAPA tracking that doesn't slip."
+>
+  <SiteNav />
+
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.06em;margin-bottom:12px;">PROCESS SAFETY SUITE  ·  MODULE 02</div>
+        <span class="eyebrow">Incident Management</span>
+        <h1 class="display-l" style="margin-bottom:24px;">From report to root cause to closure.</h1>
+        <p class="lead">Most incident management software is a glorified form-filler, log it, file it, forget it. SafetyConnect's Incident Management module is built around investigation: capture in seconds, structured root-cause analysis, CAPA tracking that doesn't slip, and the analytics your safety committee actually uses.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <!-- Incident UI mock -->
+      <div class="product-ui">
+        <div class="product-ui__chrome"><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__url">app.safetyconnect.io / incidents / INC-2026-0517</span></div>
+        <div style="padding:0;">
+          <div style="background:var(--navy);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;">
+            <div><div style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.06em;">INCIDENT  ·  INC-2026-0517-03</div><div style="font-size:15px;font-weight:600;margin-top:2px;">Slip near loading bay 4</div></div>
+            <div style="font-size:11px;background:rgba(240,80,112,0.18);color:#FFB8C4;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.04em;">INVESTIGATING</div>
+          </div>
+          <div style="padding:20px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+              <div style="padding:10px;background:var(--steel-50);border-radius:5px;"><div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">CLASSIFICATION</div><div style="font-size:12px;font-weight:600;color:var(--navy);margin-top:2px;">Near-miss · Lost-time prevented</div></div>
+              <div style="padding:10px;background:var(--steel-50);border-radius:5px;"><div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;">REPORTED</div><div style="font-size:12px;font-weight:600;color:var(--navy);margin-top:2px;">14 min ago by Priya M.</div></div>
+            </div>
+            <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:6px;">ROOT-CAUSE ANALYSIS · 5-WHY</div>
+            <div style="display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--navy);">
+              <div style="padding:6px 10px;background:#fff;border:1px solid var(--steel-200);border-radius:4px;"><strong>Why 1:</strong> Worker slipped on loading bay 4 floor.</div>
+              <div style="padding:6px 10px;background:#fff;border:1px solid var(--steel-200);border-radius:4px;"><strong>Why 2:</strong> Spilled hydraulic fluid not cleaned.</div>
+              <div style="padding:6px 10px;background:#fff;border:1px solid var(--steel-200);border-radius:4px;"><strong>Why 3:</strong> Forklift hydraulic seal failure not detected.</div>
+              <div style="padding:6px 10px;background:rgba(240,80,112,0.05);border:1px solid rgba(240,80,112,0.3);border-radius:4px;color:var(--pink);"><strong>Why 4:</strong> Pre-shift inspection skipped, investigating.</div>
+            </div>
+            <div style="margin-top:12px;font-size:11px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:4px;">CAPA STATUS</div>
+            <div style="display:flex;gap:6px;font-size:11px;"><span style="padding:3px 8px;background:rgba(25,167,206,0.15);color:var(--teal);border-radius:3px;">2 immediate</span><span style="padding:3px 8px;background:rgba(143,175,194,0.2);color:var(--steel-700);border-radius:3px;">3 planned</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div><span class="eyebrow">The under-reporting problem</span><h2 class="display-m">If reporting takes 20 minutes, no one reports.</h2></div>
+      <div><p class="body-l text-secondary mb-3">Every safety leader we work with starts from the same place: their incident numbers are too low to be true. Workers know that filing a paper report means a meeting with the supervisor, a forty-field form, and a question chain that feels like blame. So they don't report.</p><p class="body-l text-secondary">The result: near-misses that should be teaching moments stay invisible. SafetyConnect's Incident Management module is built to make reporting frictionless, classification automatic, and investigation structured, so reports go up, blame goes down, and Bird's Pyramid gets thicker at the bottom.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Capabilities</span><h2 class="display-m">Six capabilities. One closed loop.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card"><div class="card__title">Fast mobile reporting</div><div class="card__body">Report an incident or near-miss in under 60 seconds. Photo capture, voice notes, GPS location, and witness tagging, all from the phone in your pocket.</div></div>
+      <div class="card"><div class="card__title">Smart classification</div><div class="card__body">Auto-classification by injury type, severity, location, and process. Lost-time injury, first-aid, near-miss, property damage, environmental, handled distinctly.</div></div>
+      <div class="card"><div class="card__title">Structured investigation</div><div class="card__body">Multi-level investigation workflow with 5-Why, fishbone, fault-tree, and bow-tie templates. Auto-route to the right investigator based on incident severity.</div></div>
+      <div class="card"><div class="card__title">CAPA tracking</div><div class="card__body">Corrective and preventive actions linked back to the originating incident. Owners assigned, deadlines enforced, closure verified. No CAPA falls through.</div></div>
+      <div class="card"><div class="card__title">Trend analytics</div><div class="card__body">Bird's pyramid, heatmaps by location and time, recurring root-cause analysis. Spot the patterns your monthly safety committee report should be flagging.</div></div>
+      <div class="card"><div class="card__title">Regulatory reporting</div><div class="card__body">Auto-generate reports for OSHA Form 300, OSH Code, country-specific labor authority filings. Audit-ready records in formats inspectors recognise.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">How it works</span><h2 class="display-m">The lifecycle of an incident, from first report to closed CAPA.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;">
+      <div style="background:#fff;padding:20px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);">STEP 01</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin:6px 0;">Report</div><p style="font-size:12px;color:var(--steel-700);line-height:1.5;margin:0;">Mobile-first capture. 60 seconds. Photo, location, witnesses.</p></div>
+      <div style="background:#fff;padding:20px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);">STEP 02</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin:6px 0;">Classify</div><p style="font-size:12px;color:var(--steel-700);line-height:1.5;margin:0;">Severity, type, location, regulatory category, assigned automatically.</p></div>
+      <div style="background:#fff;padding:20px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);">STEP 03</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin:6px 0;">Investigate</div><p style="font-size:12px;color:var(--steel-700);line-height:1.5;margin:0;">5-Why, fishbone, fault-tree. Structured workflows, not blank forms.</p></div>
+      <div style="background:#fff;padding:20px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);">STEP 04</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin:6px 0;">Act</div><p style="font-size:12px;color:var(--steel-700);line-height:1.5;margin:0;">CAPAs assigned, deadlines set, escalations automated.</p></div>
+      <div style="background:#fff;padding:20px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);">STEP 05</div><div style="font-size:14px;font-weight:600;color:var(--navy);margin:6px 0;">Close</div><p style="font-size:12px;color:var(--steel-700);line-height:1.5;margin:0;">Closure verified. Learnings shared. Trend updated.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Incident Management.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Can workers report anonymously?</summary><div class="faq-a">Yes. Anonymous reporting is configurable per customer. Most of our customers enable it for near-miss and hazard observation reports, it dramatically increases reporting volume.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it integrate with our existing systems?</summary><div class="faq-a">Yes, SAP, Oracle, ServiceNow, HRIS systems, and most BI tools (Power BI, Tableau, Looker). Standard APIs and pre-built connectors available.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does it handle multi-language deployments?</summary><div class="faq-a">The mobile app supports English, Hindi, Tamil, Telugu, Spanish, Portuguese, and Arabic out of the box. Custom languages added on Enterprise plans.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;"><div><span class="eyebrow">Related reading</span><h2 class="h1" style="margin-top:4px;">More on incident management.</h2></div><a href="#" class="btn-tertiary arrow-right">All incident articles</a></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--steel-500),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">METHODOLOGY</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Incident reporting: the what, why, and how.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A pragmatic guide for safety teams designing their reporting workflow.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">INVESTIGATION</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">5-Why, fishbone, or fault-tree: which to use when.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A short, practical guide to picking the right root-cause technique for the incident at hand.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">CULTURE</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Bird's pyramid and the under-reporting trap.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">Why your near-miss numbers are too low, and what your safety committee should do about it.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See Incident Management on a real workflow.</h2>
+  <p>30-minute walkthrough on a real (anonymized) incident lifecycle, from first report to closed CAPA.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a></div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="CAPA Tracking — corrective & preventive actions | SafetyConnect"
+  description="Assign, track, and verify corrective and preventive actions so nothing falls through the cracks."
+>
+  <SiteNav />
+
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.06em;margin-bottom:12px;">PROCESS SAFETY SUITE  ·  MODULE 05</div>
+        <span class="eyebrow">CAPA Tracking</span>
+        <h1 class="display-l" style="margin-bottom:24px;">Every action. Every owner. Every closure.</h1>
+        <p class="lead">Audits, incidents, hazards, HIRAs, permits, customer commitments, regulatory findings, they all generate actions. Most of those actions sit in disconnected lists across email, spreadsheets, and stickies. SafetyConnect's CAPA Tracking pulls every one of them into a single register with owners, deadlines, escalations, and closure verification.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <!-- Action register UI mock -->
+      <div class="product-ui">
+        <div class="product-ui__chrome"><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__dot"></span><span class="product-ui__url">app.safetyconnect.io / actions</span></div>
+        <div style="padding:0;">
+          <div style="background:var(--navy);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;"><div><div style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.06em;">ACTION REGISTER</div><div style="font-size:15px;font-weight:600;margin-top:2px;">My team · 142 open · 12 overdue</div></div><div style="font-size:11px;background:rgba(240,80,112,0.18);color:#FFB8C4;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.04em;">12 OVERDUE</div></div>
+          <div style="padding:20px;">
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:10px 12px;background:rgba(240,80,112,0.05);border-left:3px solid var(--pink);border-radius:0 5px 5px 0;align-items:center;">
+                <div><div style="font-size:12px;font-weight:600;color:var(--navy);">Replace pressure relief valve · Tank 3B</div><div style="font-size:10px;color:var(--steel-600);margin-top:2px;">Source: Incident INC-2026-0421-09 · Rajesh K.</div></div>
+                <div style="font-size:10px;color:var(--pink);font-weight:600;">5 DAYS OVERDUE</div>
+                <span style="padding:3px 8px;background:rgba(240,80,112,0.15);color:var(--pink);border-radius:3px;font-size:10px;font-weight:600;">CRITICAL</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:10px 12px;background:#fff;border:1px solid var(--steel-200);border-radius:5px;align-items:center;">
+                <div><div style="font-size:12px;font-weight:600;color:var(--navy);">Update LOTO procedure for compressor C-4</div><div style="font-size:10px;color:var(--steel-600);margin-top:2px;">Source: Audit AUD-2026-Q2-04 · Anjali R.</div></div>
+                <div style="font-size:10px;color:var(--steel-600);">Due 22 May</div>
+                <span style="padding:3px 8px;background:rgba(143,175,194,0.2);color:var(--steel-700);border-radius:3px;font-size:10px;font-weight:600;">MEDIUM</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:10px 12px;background:#fff;border:1px solid var(--steel-200);border-radius:5px;align-items:center;">
+                <div><div style="font-size:12px;font-weight:600;color:var(--navy);">Refresher training: confined space (12 ops)</div><div style="font-size:10px;color:var(--steel-600);margin-top:2px;">Source: HIRA-2026-04 · Suresh P.</div></div>
+                <div style="font-size:10px;color:var(--steel-600);">Due 30 May</div>
+                <span style="padding:3px 8px;background:rgba(143,175,194,0.2);color:var(--steel-700);border-radius:3px;font-size:10px;font-weight:600;">MEDIUM</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr auto auto;gap:12px;padding:10px 12px;background:rgba(25,167,206,0.05);border:1px solid rgba(25,167,206,0.2);border-radius:5px;align-items:center;">
+                <div><div style="font-size:12px;font-weight:600;color:var(--navy);">Install convex mirror at Aisle C-D junction</div><div style="font-size:10px;color:var(--steel-600);margin-top:2px;">Source: Forklift hotspot review · Closed by Priya M.</div></div>
+                <div style="font-size:10px;color:var(--teal);font-weight:600;">CLOSED</div>
+                <span style="padding:3px 8px;background:rgba(25,167,206,0.15);color:var(--teal);border-radius:3px;font-size:10px;font-weight:600;">VERIFIED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div><span class="eyebrow">Why actions matter</span><h2 class="display-m">The single source of truth your safety committee actually trusts.</h2></div>
+      <div><p class="body-l text-secondary mb-3">Safety committees fail not because findings aren't made, but because closure isn't tracked. Every audit produces actions. Every incident produces actions. Every hazard produces actions. By the time the committee meets monthly, the actions are scattered across five inboxes, three spreadsheets, and one person's memory.</p><p class="body-l text-secondary">CAPA Tracking is the connective tissue that makes the other four modules actually move the needle, by ensuring that what gets identified gets closed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Capabilities</span><h2 class="display-m">Capabilities built for closure, not for tracking.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card"><div class="card__title">Centralised register</div><div class="card__body">Every action from every source, audits, incidents, hazards, HIRAs, permits, customer commitments, regulatory findings, in one register. No more "where was that action again?"</div></div>
+      <div class="card"><div class="card__title">Source-linked</div><div class="card__body">Each action linked back to the originating record. Click through from an action to the incident it came from. When you close the action, the source record's closure status updates too.</div></div>
+      <div class="card"><div class="card__title">Owner accountability</div><div class="card__body">Every action has one owner. Owners get reminders. Skip reminders get escalations. Reassignments require approval. No more "I thought you were doing that."</div></div>
+      <div class="card"><div class="card__title">Automated escalation</div><div class="card__body">Approaching deadlines trigger reminders. Overdue actions trigger escalation to the next level. Habitually overdue owners surface in management reports.</div></div>
+      <div class="card"><div class="card__title">Closure verification</div><div class="card__body">"Closed" requires verification, photo, signature, or check by a designated verifier. No marking your own homework. Verification creates the audit trail your safety committee needs.</div></div>
+      <div class="card"><div class="card__title">Trend reporting</div><div class="card__body">Closure rates by source, by owner, by site, by category, by month. Spot which area of your operation is generating actions faster than it's closing them.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on CAPA Tracking.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Can actions be raised independently, not from another module?</summary><div class="faq-a">Yes. Standalone actions are fully supported, a safety committee meeting decision, a management instruction, a customer commitment. Anything that needs an owner and a deadline can live in the register.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it integrate with our existing task management tools?</summary><div class="faq-a">Yes, Microsoft Teams, Outlook, Slack, ServiceNow, Jira, and most major work management platforms. Two-way sync so closure in either system updates the other.</div></details>
+      <details class="faq-item"><summary class="faq-q">How do we report on closure rates across sites?</summary><div class="faq-a">Built-in dashboards show closure rates, average time-to-close, and overdue counts by site, region, owner, and source type. Custom reports configurable on Scale and Enterprise plans.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;"><div><span class="eyebrow">Related reading</span><h2 class="h1" style="margin-top:4px;">More on action tracking.</h2></div><a href="#" class="btn-tertiary arrow-right">All ATS articles</a></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">CAPA</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">CAPA done well: a working definition.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">What corrective and preventive action means in practice, and why most plants get the "preventive" part wrong.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--steel-600));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">METRICS</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">The role of CAPA Tracking in compliance and audit-readiness.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">Why audit-readiness is mostly about closure rates, and how to read your own metrics.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--teal),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">PRACTICE</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">How to run a safety committee meeting that actually closes things.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A short playbook on running 60-minute committee meetings with a single agenda: did we close what we promised?</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See CAPA Tracking on your own action backlog.</h2>
+  <p>Bring a recent audit. We'll show you what your action register would look like in 30 minutes.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a></div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>

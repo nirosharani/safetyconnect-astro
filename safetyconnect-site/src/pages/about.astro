@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="About SafetyConnect — the team and the mission"
+  description="We exist to help companies get to Zero Harm. Hyderabad-headquartered, with a US presence."
+>
+  <SiteNav />
+
+<!-- Hero / mission -->
+<section class="hero surface-white" style="padding-bottom:64px;">
+  <div class="container">
+    <div style="max-width:840px;">
+      <span class="eyebrow">Our story</span>
+      <h1 class="display-l" style="margin-bottom:24px;">We help health and safety heads sleep at night.</h1>
+      <p class="lead">SafetyConnect was founded inside IoT Research Labs in Hyderabad with a single belief: safety platforms should respect the people they're trying to protect. We build the operating system that covers both the road and the plant, on one platform, with one privacy standard, for industrial enterprises that take safety seriously.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Origin -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:64px;">
+      <div>
+        <span class="eyebrow">How we started</span>
+        <h2 class="display-m">From a research lab to global plant floors.</h2>
+      </div>
+      <div>
+        <p class="body-l text-secondary mb-3">SafetyConnect started inside IoT Research Labs (IoTRL), a research-led product company building applied AI for industrial environments. The early bet: that the sensors in every employee's phone could capture more useful safety signal than the most expensive in-vehicle hardware, and that the right scoring system could shift driving behaviour without surveillance.</p>
+        <p class="body-l text-secondary mb-3">That bet became the Driving Safety. As enterprise customers asked us to extend the same operational discipline into their plants, the Process Safety Suite followed, permits, incidents, action tracking, and forklift safety, built mobile-first and methodology-aware.</p>
+        <p class="body-l text-secondary">Today SafetyConnect protects more than 100,000 employees across more than six countries, pharma, FMCG, manufacturing, oil &amp; gas, construction, and we're still based out of Hyderabad, with a North American team in Lewes, Delaware.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What we do -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">What we do</span><h2 class="display-m">One platform. Two safety domains.</h2></div>
+    <div class="grid-2">
+      <div style="padding:32px;background:var(--surface-2);border-radius:10px;">
+        <div class="lead-num">01</div>
+        <h3 class="h2 mb-2 mt-3">Driving Safety</h3>
+        <p class="text-secondary body">For your field force, service engineers, sales reps, technicians. AI-powered behaviour monitoring, the SafetyConnect Score, real-time risk alerts, and a manager dashboard.</p>
+      </div>
+      <div style="padding:32px;background:var(--surface-2);border-radius:10px;">
+        <div class="lead-num">02</div>
+        <h3 class="h2 mb-2 mt-3">Process Safety Suite</h3>
+        <p class="text-secondary body">For your plants, operators, contractors, on-site teams. Digital permits, incident management, action tracking, forklift safety, and audit-ready workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What we believe in -->
+<section class="section surface-white" style="padding-top:80px;padding-bottom:80px;">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:48px;">
+      <span class="eyebrow">What we believe in</span>
+      <h2 class="display-m">Twelve qualities. One way of working.</h2>
+      <p>Adapted from the qualities of a human being taught by Sri Aurobindo and The Mother, translated, with care, into the way we build software for the people who keep workplaces safe.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--steel-200);border:1px solid var(--steel-200);">
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">01</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Sincerity</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">We say what we mean, especially about what we don't do.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Our product copy doesn't oversell. Our roadmap doesn't lie. Limitations are documented before strengths.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">02</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Humility</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">The safety leader on the floor knows more than we do.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Every product decision starts with a customer conversation, not a strategy memo. We update our thinking when the data does.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">03</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Gratitude</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">We remember the customers who took the first chance.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">The companies that deployed us early, when we had no references and no certifications, are still our customers. We don't forget that, and we don't outgrow them.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">04</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Perseverance</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">Safety transformations take time. We stay.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">We don't chase logo wins. The customers we deploy with are still our customers five years later, and we deploy because the work matters, not because the contract was signed.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">05</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Aspiration</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">Zero harm. Not as a slogan, as a benchmark.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">The work is long, the gains are incremental, and the destination is non-negotiable. We measure against it knowing we'll fall short, and we get up tomorrow and try again.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">06</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Receptivity</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">Every incident teaches us something.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Customer success calls write part of our product roadmap. Customer postmortems shape our security practices. We listen to what the field tells us, and we let it change us.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">07</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Progress</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">Better every quarter. Boring is the goal.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">We don't make showy releases. We make steady, compounding improvement that adds up to a platform that's measurably better than it was a year ago.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">08</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Courage</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">We say no to features that compromise privacy.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Surveillance use cases get a "no", even from large customers. We don't capture personal-time trips. We don't access the camera or microphone. The product reflects this on purpose.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">09</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Goodness</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">The person we protect matters more than the data we collect.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Every privacy decision starts here. Every product decision should pass this test. The employee on the road or the floor is the reason the platform exists.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">10</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Generosity</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">We share what works.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Methodologies, templates, frameworks, field notes. The industry gets better when we share what we've learned, and so do we.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">11</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Equanimity</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">We don't panic during incidents. That's the whole point.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">Calm, structured, deliberate response, to safety events at customer sites and to service incidents on our own platform. Composure is operational.</p>
+      </div>
+
+      <div style="background:#fff;padding:32px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;">12</div>
+        <h3 style="font-size:22px;font-weight:600;color:var(--navy);margin-top:10px;margin-bottom:12px;">Peace</h3>
+        <div style="font-size:14px;color:var(--steel-700);font-style:italic;line-height:1.5;margin-bottom:14px;">EHS Heads should sleep at night.</div>
+        <p style="font-size:13.5px;color:var(--steel-700);line-height:1.55;margin:0;">This is the work. The platform exists in service of this one outcome. Everything else is a means.</p>
+      </div>
+
+    </div>
+
+    <p style="font-size:13px;color:var(--steel-600);font-style:italic;text-align:center;margin-top:32px;max-width:760px;margin-left:auto;margin-right:auto;line-height:1.55;">Adapted, with respect and gratitude, from the qualities of a human being taught by Sri Aurobindo and The Mother of the Sri Aurobindo Ashram, Pondicherry. Translated into our context as a working compass for how we build, sell, and support SafetyConnect.</p>
+
+  </div>
+</section>
+
+<!-- Customers / footprint -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Our customers</span><h2 class="display-m">Trusted by global industrial leaders.</h2></div>
+    <div class="trust-logos" style="margin-bottom:48px;">
+      <span class="trust-logo">Schindler</span>
+      <span class="trust-logo">Cargill</span>
+      <span class="trust-logo">Saint-Gobain</span>
+      <span class="trust-logo">Mondelez</span>
+      <span class="trust-logo">Gilbarco</span>
+      <span class="trust-logo">Sun Pharma</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;text-align:center;">
+        <div style="font-size:36px;font-weight:700;color:var(--navy);line-height:1;">100,000+</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:8px;">Employees protected</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;text-align:center;">
+        <div style="font-size:36px;font-weight:700;color:var(--navy);line-height:1;">6+</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:8px;">Countries</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;text-align:center;">
+        <div style="font-size:36px;font-weight:700;color:var(--navy);line-height:1;">6+</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:8px;">Industries</div>
+      </div>
+      <div style="padding:24px;background:#fff;border:1px solid var(--steel-200);border-radius:8px;text-align:center;">
+        <div style="font-size:36px;font-weight:700;color:var(--navy);line-height:1;">80%</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:8px;">Avg. accident reduction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership (placeholder) -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Leadership</span><h2 class="display-m">The team behind the platform.</h2><p>Engineering, product, customer success, and safety practice leaders. Most of the team has been with the company through both Driving Safety and Process Safety launches.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div style="text-align:center;padding:24px;">
+        <div style="width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--navy));margin:0 auto 16px;"></div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);">Leadership name</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Role · Function</div>
+      </div>
+      <div style="text-align:center;padding:24px;">
+        <div style="width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--navy));margin:0 auto 16px;"></div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);">Leadership name</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Role · Function</div>
+      </div>
+      <div style="text-align:center;padding:24px;">
+        <div style="width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--steel-500),var(--navy));margin:0 auto 16px;"></div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);">Leadership name</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Role · Function</div>
+      </div>
+      <div style="text-align:center;padding:24px;">
+        <div style="width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--pink));margin:0 auto 16px;"></div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);">Leadership name</div>
+        <div style="font-size:13px;color:var(--steel-600);margin-top:4px;">Role · Function</div>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding:24px;background:rgba(240,80,112,0.05);border:1px dashed rgba(240,80,112,0.3);border-radius:8px;text-align:center;font-size:13px;color:var(--steel-700);">
+      <strong style="color:var(--pink);">Content gap:</strong> Leadership headshots, names, and short bios. Suggest 4 leaders (CEO/founder, CTO/product, customer success lead, safety practice lead).
+    </div>
+  </div>
+</section>
+
+<!-- Locations -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Where we are</span><h2 class="display-m">Hyderabad headquartered, US presence.</h2></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+      <div style="padding:36px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;margin-bottom:8px;">HEADQUARTERS · INDIA</div>
+        <div style="font-size:22px;font-weight:600;color:var(--navy);margin-bottom:16px;">Hyderabad</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.7;">WeWork, Financial District<br>Gachibowli, Hyderabad<br>Telangana 500032 · India</div>
+        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--steel-100);font-size:13px;color:var(--steel-600);">Engineering · Product · Customer Success · Sales (APAC, MEA)</div>
+      </div>
+      <div style="padding:36px;background:#fff;border:1px solid var(--steel-200);border-radius:10px;">
+        <div style="font-size:11px;color:var(--pink);letter-spacing:0.1em;font-weight:600;margin-bottom:8px;">NORTH AMERICA</div>
+        <div style="font-size:22px;font-weight:600;color:var(--navy);margin-bottom:16px;">Lewes, Delaware</div>
+        <div style="font-size:14px;color:var(--steel-700);line-height:1.7;">16192 Coastal Highway<br>Lewes, DE 19958<br>United States</div>
+        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--steel-100);font-size:13px;color:var(--steel-600);">Sales · Customer Success (Americas, EU)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recognition -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Recognition</span><h2 class="display-m">Awards, certifications, and partner status.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div style="padding:24px;border:1px solid var(--steel-200);border-radius:8px;text-align:center;">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">CERTIFIED</div>
+        <div style="font-size:17px;font-weight:600;color:var(--navy);">ISO 27001</div>
+      </div>
+      <div style="padding:24px;border:1px solid var(--steel-200);border-radius:8px;text-align:center;background:var(--surface-2);">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">RECOGNITION</div>
+        <div style="font-size:15px;color:var(--steel-700);font-style:italic;">Industry award placeholder</div>
+      </div>
+      <div style="padding:24px;border:1px solid var(--steel-200);border-radius:8px;text-align:center;background:var(--surface-2);">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">PARTNER</div>
+        <div style="font-size:15px;color:var(--steel-700);font-style:italic;">Tech partnership placeholder</div>
+      </div>
+      <div style="padding:24px;border:1px solid var(--steel-200);border-radius:8px;text-align:center;background:var(--surface-2);">
+        <div style="font-size:11px;color:var(--steel-600);letter-spacing:0.08em;margin-bottom:8px;">MEMBER</div>
+        <div style="font-size:15px;color:var(--steel-700);font-style:italic;">Safety body placeholder</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding:16px;background:rgba(240,80,112,0.05);border:1px dashed rgba(240,80,112,0.3);border-radius:8px;font-size:13px;color:var(--steel-700);">
+      <strong style="color:var(--pink);">Content gap:</strong> Add specific recognitions (e.g., NSC India, RoSPA, BSC, SafeIndia conference recognitions, AWS Partner status).
+    </div>
+  </div>
+</section>
+
+<!-- Careers CTA -->
+<section class="surface-navy" style="padding:80px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;">
+      <div>
+        <span class="eyebrow" style="display:inline-block;">Join us</span>
+        <h2 class="display-m" style="color:#fff;margin-top:16px;margin-bottom:16px;">We're hiring across engineering, product, and customer success.</h2>
+        <p style="font-size:18px;color:rgba(255,255,255,0.78);">Most roles are based in Hyderabad. Some are remote or US-based. We move fast, talk straight, and stay close to the safety problem on the ground.</p>
+      </div>
+      <div style="display:flex;justify-content:flex-end;">
+        <a href="https://iotrl.freshteam.com/jobs" class="btn btn-primary btn-lg">See open roles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <SiteFooter />
+
+</BaseLayout>

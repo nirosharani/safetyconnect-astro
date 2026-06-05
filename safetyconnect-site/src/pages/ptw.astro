@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout
+  title="Permit to Work software — digital permits & approvals | SafetyConnect"
+  description="Digitise every permit type, approval, and signature. Conflict detection, offline capture, and audit-ready trails."
+>
+  <SiteNav />
+
+<!-- Hero -->
+<section class="hero surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.06em;margin-bottom:12px;">PROCESS SAFETY SUITE  ·  MODULE 01</div>
+        <span class="eyebrow">Permit to Work</span>
+        <h1 class="display-l" style="margin-bottom:24px;">Permits, without the paperwork.</h1>
+        <p class="lead">High-risk work, hot work, confined space, working at height, electrical isolation, lockout/tagout, is where most plant incidents happen, and where audit trails fall apart fastest. SafetyConnect's Permit-to-Work module digitizes every step, every approval, every signature.</p>
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a>
+          <a href="/pricing" class="btn btn-secondary btn-lg">See pricing</a>
+        </div>
+      </div>
+      <!-- Mobile permit UI mock -->
+      <div style="display:flex;justify-content:center;">
+        <div style="width:280px;background:var(--navy);border-radius:24px;padding:14px;box-shadow:var(--shadow-lg);">
+          <div style="background:#fff;border-radius:14px;overflow:hidden;">
+            <div style="padding:14px 16px;background:var(--navy);color:#fff;">
+              <div style="font-size:10px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;">PERMIT #HW-2026-0517-04</div>
+              <div style="font-size:14px;font-weight:600;margin-top:2px;">Hot Work Permit</div>
+            </div>
+            <div style="padding:14px 16px;">
+              <div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:4px;">LOCATION</div>
+              <div style="font-size:13px;color:var(--navy);font-weight:500;margin-bottom:12px;">Plant 3 · Zone B-04 · Tank Farm</div>
+              <div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:4px;">TASK</div>
+              <div style="font-size:13px;color:var(--navy);font-weight:500;margin-bottom:14px;">Welding repair on pipe support</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">
+                <div style="padding:8px;background:var(--steel-50);border-radius:5px;text-align:center;"><div style="font-size:9px;color:var(--steel-600);">VALID FROM</div><div style="font-size:11px;font-weight:600;color:var(--navy);margin-top:2px;">08:00 AM</div></div>
+                <div style="padding:8px;background:var(--steel-50);border-radius:5px;text-align:center;"><div style="font-size:9px;color:var(--steel-600);">VALID UNTIL</div><div style="font-size:11px;font-weight:600;color:var(--navy);margin-top:2px;">04:00 PM</div></div>
+              </div>
+              <div style="font-size:10px;color:var(--steel-600);letter-spacing:0.06em;margin-bottom:6px;">APPROVAL CHAIN</div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:rgba(25,167,206,0.08);border:1px solid rgba(25,167,206,0.2);border-radius:5px;font-size:11px;color:var(--navy);"><span>Supervisor</span><span style="color:var(--teal);font-weight:600;">✓ Signed</span></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:rgba(25,167,206,0.08);border:1px solid rgba(25,167,206,0.2);border-radius:5px;font-size:11px;color:var(--navy);"><span>Safety Officer</span><span style="color:var(--teal);font-weight:600;">✓ Signed</span></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:rgba(240,80,112,0.05);border:1px solid rgba(240,80,112,0.2);border-radius:5px;font-size:11px;color:var(--navy);"><span>Plant Manager</span><span style="color:var(--pink);font-weight:600;">Pending</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The problem -->
+<section class="section surface-steel">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Why digital PTW</span>
+        <h2 class="display-m">Paper permits leave audit trails that don't survive scrutiny.</h2>
+      </div>
+      <div>
+        <p class="body-l text-secondary mb-3">Almost every plant we work with starts with paper permits, a binder of forms, a clipboard at the gate, an approval signature scrawled in a hurry, a copy filed somewhere a quarterly audit might never find. When something goes wrong, the gap between what was supposed to happen and what's documented is where regulators and insurers look first.</p>
+        <p class="body-l text-secondary">Digital PTW closes that gap. Every permit, every approver, every signature, every photo, every gas-test reading, captured at the moment, in sequence, never reconstructed after the fact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Capabilities -->
+<section class="section surface-white">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">Capabilities</span><h2 class="display-m">Every permit type. Every approval. One workflow.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="card">
+        <div class="card__title">Configurable permit types</div>
+        <div class="card__body">Hot work, cold work, confined space, working at height, excavation, electrical isolation, lockout/tagout, line-breaking, and any custom permit your plant uses. Each with its own checklist, gas-test requirements, and PPE specification.</div>
+      </div>
+      <div class="card">
+        <div class="card__title">Multi-level approval workflows</div>
+        <div class="card__body">Supervisor, safety officer, plant manager, contractor lead, vendor representative, every approver signs digitally, in sequence, with full timestamp and identity capture. No "signed by proxy."</div>
+      </div>
+      <div class="card">
+        <div class="card__title">Conflict detection</div>
+        <div class="card__body">Adjacent permits, overlapping zones, simultaneous high-risk activities, flagged before the permit goes active. Stop unsafe combinations of work before they start.</div>
+      </div>
+      <div class="card">
+        <div class="card__title">Mobile-first capture</div>
+        <div class="card__body">Field teams raise, sign, and close permits on their phone. Photos, gas-test readings, isolation tags, captured at the worksite, not after.</div>
+      </div>
+      <div class="card">
+        <div class="card__title">Time-bound validity</div>
+        <div class="card__body">Every permit has a valid-from and valid-until time. Extensions require fresh approval. Expiry triggers automatic notifications and closure prompts.</div>
+      </div>
+      <div class="card">
+        <div class="card__title">Full audit trail</div>
+        <div class="card__body">Every permit retained for the retention period your auditor needs. Searchable by date, location, contractor, permit type, or incident link. Export to PDF for external audits.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">How it works</span><h2 class="display-m">The PTW workflow, end to end.</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <div style="background:#fff;padding:24px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.08em;margin-bottom:8px;">STEP 01</div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Raise</div>
+        <p style="font-size:13px;color:var(--steel-700);line-height:1.5;margin:0;">Field team raises a permit on mobile. Selects type, scope, location, valid-from/until. Attaches photos and gas-test readings.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.08em;margin-bottom:8px;">STEP 02</div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Approve</div>
+        <p style="font-size:13px;color:var(--steel-700);line-height:1.5;margin:0;">Approvers receive push notifications in sequence. Each reviews, optionally adds conditions, and signs digitally on their phone or desktop.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.08em;margin-bottom:8px;">STEP 03</div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Execute</div>
+        <p style="font-size:13px;color:var(--steel-700);line-height:1.5;margin:0;">Permit goes active. Work proceeds. Time-bound expiry tracked. Conditions enforced. Adjacent-permit conflicts flagged in real time.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-top:3px solid var(--pink);border-radius:0 0 6px 6px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--steel-500);letter-spacing:0.08em;margin-bottom:8px;">STEP 04</div>
+        <div style="font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;">Close</div>
+        <p style="font-size:13px;color:var(--steel-700);line-height:1.5;margin:0;">Work complete. Field team closes the permit with site walk-back photos. Closure verified. Full record archived for audit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Compliance -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;">
+      <div>
+        <span class="eyebrow">Compliance</span>
+        <h2 class="display-m">Aligned with the frameworks your auditors already use.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="padding:24px;background:var(--surface-2);border-left:3px solid var(--pink);border-radius:0 6px 6px 0;"><div style="font-size:13px;font-weight:600;color:var(--navy);">OSHA 1910.146</div><div style="font-size:12px;color:var(--steel-700);margin-top:4px;line-height:1.4;">Permit-required confined spaces</div></div>
+        <div style="padding:24px;background:var(--surface-2);border-left:3px solid var(--pink);border-radius:0 6px 6px 0;"><div style="font-size:13px;font-weight:600;color:var(--navy);">OSHA 1910.147</div><div style="font-size:12px;color:var(--steel-700);margin-top:4px;line-height:1.4;">Lockout / tagout (LOTO)</div></div>
+        <div style="padding:24px;background:var(--surface-2);border-left:3px solid var(--pink);border-radius:0 6px 6px 0;"><div style="font-size:13px;font-weight:600;color:var(--navy);">OSHA 1910.252</div><div style="font-size:12px;color:var(--steel-700);margin-top:4px;line-height:1.4;">Welding, cutting, brazing</div></div>
+        <div style="padding:24px;background:var(--surface-2);border-left:3px solid var(--pink);border-radius:0 6px 6px 0;"><div style="font-size:13px;font-weight:600;color:var(--navy);">ISO 45001</div><div style="font-size:12px;color:var(--steel-700);margin-top:4px;line-height:1.4;">Operational planning and control</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section surface-steel">
+  <div class="container">
+    <div class="section-header"><span class="eyebrow">FAQ</span><h2 class="display-m">Common questions on Permit to Work.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item" open><summary class="faq-q">Can we keep our existing permit forms?</summary><div class="faq-a">Yes. We replicate your existing permit forms in the platform, same fields, same approval chain, same conditions, and then progressively digitise the friction points your teams complain about. You don't have to standardise before you start.</div></details>
+      <details class="faq-item"><summary class="faq-q">Does it work offline?</summary><div class="faq-a">Yes. The mobile app captures permits offline and syncs when connectivity returns. Critical for plants with poor cellular coverage.</div></details>
+      <details class="faq-item"><summary class="faq-q">How does contractor management work?</summary><div class="faq-a">Contractors can be issued limited-access accounts to raise permits on their work. Their permits are routed to your approvers; their data is segregated; their access expires when their contract ends.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- Related reading -->
+<section class="section surface-white">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;"><div><span class="eyebrow">Related reading</span><h2 class="h1" style="margin-top:4px;">More on permits and high-risk work.</h2></div><a href="#" class="btn-tertiary arrow-right">All PTW articles</a></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--teal));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">FRAMEWORK</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">A 6-step framework for digitising your permit-to-work process.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">From audit-trail gaps to a fully mobile PTW workflow, without losing rigour.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--pink),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">CONFINED SPACE</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Confined space entry: the five gaps that show up on every audit.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">A walk-through with safety officers from three pharma plants on what their auditors keep finding.</p></a>
+      <a href="#" style="text-decoration:none;color:inherit;"><div style="aspect-ratio:16/10;background:linear-gradient(135deg,var(--steel-500),var(--navy));border-radius:8px;margin-bottom:16px;"></div><div style="font-size:11px;color:var(--pink);letter-spacing:0.08em;font-weight:600;text-transform:uppercase;margin-bottom:8px;">PRACTICE</div><h4 style="font-size:18px;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:10px;">Hot work permits and the contractors who skip them.</h4><p style="font-size:14px;color:var(--steel-700);line-height:1.5;">Why "contractor compliance" is the hardest part of PTW, and what's actually worked.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="surface-white"><div class="container final-cta">
+  <span class="eyebrow" style="display:inline-block;">Talk to us</span>
+  <h2 class="display-m">See PTW on your plant's permit types.</h2>
+  <p>Send us your existing permit forms, we'll show you the same workflow, digitised, in 30 minutes.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a href="/demo" class="btn btn-primary btn-lg">Book a 30-minute walkthrough</a></div>
+</div></section>
+
+  <SiteFooter />
+
+</BaseLayout>
