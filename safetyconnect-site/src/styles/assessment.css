@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(215 25% 20%);
+  --color-border: hsl(214 32% 91%);
+  --color-input: hsl(214 32% 91%);
+  --color-ring: hsl(213 45% 20%);
+  --color-primary: hsl(213 45% 20%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(210 40% 96%);
+  --color-secondary-foreground: hsl(213 45% 20%);
+  --color-muted: hsl(210 40% 96%);
+  --color-muted-foreground: hsl(215 16% 47%);
+  --color-accent: hsl(320 52% 53%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-next-btn: hsl(312 48% 53%);
+  --color-footer: hsl(213 45% 20%);
+  --color-footer-foreground: hsl(0 0% 100%);
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+}
+
+/* CSS custom properties for backward compat with hsl(var(--xxx)) usage in components */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215 25% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 20%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 25% 20%;
+  --primary: 213 45% 20%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 213 45% 20%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 320 52% 53%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 213 45% 20%;
+  --radius: 0.5rem;
+  --footer-bg: 213 45% 20%;
+  --footer-foreground: 0 0% 100%;
+  --next-btn: 312 48% 53%;
+}
+
+* { border-color: hsl(var(--border)); }
+body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); }
